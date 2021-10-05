@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-10-05T01:47:18.156Z" agent="5.0 (Windows)" etag="UfADcEBvjXHTGmYdXIxr" version="14.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-05T01:49:36.162Z" agent="5.0 (Windows)" etag="f9uEjAQJ26WZaujpdsse" version="14.6.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1325" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="jAdfjSSjhELqZVDht7EO-1" value="&lt;h1&gt;Water Pump Monitoring&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Sensors required&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Sensor for determining water level in the water tank&lt;/li&gt;&lt;li&gt;Sensor for determining if water tank cap/lid has been opened?&lt;/li&gt;&lt;li&gt;Sensors for determining if water pump is running dry&lt;/li&gt;&lt;li&gt;Sensors for monitoring vibrations at critical places of the pump&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;h2&gt;Actuators/Relays required&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Relay for turning on/off the motor&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="40" width="530" height="240" as="geometry" />
+        <mxCell id="jAdfjSSjhELqZVDht7EO-1" value="&lt;h1&gt;Water Pump Monitoring&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Sensors&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Sensor for determining water level in the water tank&lt;/li&gt;&lt;li&gt;Sensor for determining if water tank cap/lid has been opened?&lt;/li&gt;&lt;li&gt;Sensors for determining if water pump is running dry&lt;/li&gt;&lt;li&gt;Sensors for monitoring vibrations at critical places of the pump&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;h2&gt;Actuators&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Relay for turning on/off the motor&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="40" width="530" height="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
