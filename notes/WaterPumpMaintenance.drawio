@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T07:27:11.187Z" agent="5.0 (Windows)" etag="pZ5CTEgwnI83ZD2XtmUQ" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T07:44:11.402Z" agent="5.0 (Windows)" etag="VKLm7dB5bMcbEE4GOYzM" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,29 +36,17 @@
         <mxCell id="wKNySFnyqLLt88LWujrZ-0" value="&lt;h1&gt;Water Level Sensor&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Initialize unit&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;set interrupt priorities&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;initialize s/w stack&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;initialize n/w protocol stack&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Begin verification&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;check if sensors are connected&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;check if sensors are operating properly&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span&gt;Power on RF module&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Unit not registered &lt;/span&gt;&lt;span&gt;(by checking ROM?)&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;set count down&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;broadcast registration message securely&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;wait for acknowledgement from the main controller&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;on confirmation register main controller address (by writing to ROM)&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Activate sensors&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Set timer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;On timeout&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;read sensor values&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;compute level&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;begin count down and send message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;message fails&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;try until count down expires&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;set timer and go to power saving mode&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="-2160" width="720" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-0" target="dLBL7whKYPucpF0OWfQC-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-0" value="Read timer interrupt" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="190" y="-990" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-1" target="dLBL7whKYPucpF0OWfQC-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-1" value="Read sensors" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="160" y="-900" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-2" target="dLBL7whKYPucpF0OWfQC-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-2" value="Compute level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="160" y="-830" width="100" height="40" as="geometry" />
+          <mxGeometry x="350" y="-440" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-5" target="dLBL7whKYPucpF0OWfQC-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-5" value="Read latest level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="370" y="-900" width="100" height="40" as="geometry" />
+          <mxGeometry x="350" y="160" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-29" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-8" target="dLBL7whKYPucpF0OWfQC-24">
           <mxGeometry relative="1" as="geometry" />
@@ -67,34 +55,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-8" value="attempt &amp;lt; &lt;i&gt;n?&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="375" y="-830" width="90" height="80" as="geometry" />
+          <mxGeometry x="355" y="240" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-17" target="dLBL7whKYPucpF0OWfQC-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-17" value="Store latest level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="160" y="-760" width="100" height="40" as="geometry" />
+          <mxGeometry x="350" y="-360" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-18" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="175" y="-690" width="70" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-23" target="dLBL7whKYPucpF0OWfQC-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-23" value="Send timer interrupt" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="400" y="-990" width="40" height="40" as="geometry" />
+          <mxGeometry x="365" y="-280" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-24" target="dLBL7whKYPucpF0OWfQC-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-24" value="Send message" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="370" y="-710" width="100" height="40" as="geometry" />
+          <mxGeometry x="350" y="360" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32" target="dLBL7whKYPucpF0OWfQC-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="320" y="-590" />
-              <mxPoint x="320" y="-880" />
+              <mxPoint x="300" y="470" />
+              <mxPoint x="300" y="180" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -107,22 +89,87 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-32" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="375" y="-630" width="90" height="80" as="geometry" />
+          <mxGeometry x="355" y="440" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-40" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="385" y="-510" width="70" height="40" as="geometry" />
+          <mxGeometry x="365" y="560" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-43" target="dLBL7whKYPucpF0OWfQC-47">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set mode to Offline" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="530" y="-815" width="100" height="50" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set offline mode" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="520" y="255" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-45" value="&lt;h1&gt;Water level unit modes&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Connectivity mode&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;Offline&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller failed&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Online&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller succeeded&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Operation mode&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Faulty&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors failed&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Sensing&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors succeeded&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="-1720" width="600" height="450" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-47" value="Switch to power save mode?" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="530" y="-720" width="100" height="50" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-57" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-49" target="dLBL7whKYPucpF0OWfQC-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-61" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-49" target="dLBL7whKYPucpF0OWfQC-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-49" value="attempt &amp;lt; &lt;i&gt;n?&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="355" y="-840" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-52" target="dLBL7whKYPucpF0OWfQC-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-52" value="Read sensors" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="350" y="-720" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-54" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="-500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-53" target="dLBL7whKYPucpF0OWfQC-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="-600" />
+              <mxPoint x="300" y="-800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-56" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-55">
+          <mxGeometry x="-0.2581" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-53" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="355" y="-640" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-60" value="Set Faulty mode" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="520" y="-820" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-62" target="dLBL7whKYPucpF0OWfQC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-62" value="Set Sensing mode" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="350" y="-520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-66" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-65" target="dLBL7whKYPucpF0OWfQC-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-67" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-65" target="dLBL7whKYPucpF0OWfQC-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="-900" />
+              <mxPoint x="200" y="-260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-65" value="&lt;div&gt;Sensing&lt;/div&gt;&lt;div&gt; mode?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="355" y="-960" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-68" target="dLBL7whKYPucpF0OWfQC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-68" value="&lt;div&gt;Sync timer&lt;/div&gt;&lt;div&gt;expired&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="355" y="70" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-69" target="dLBL7whKYPucpF0OWfQC-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-69" value="&lt;div&gt;Sense timer&lt;/div&gt;&lt;div&gt;expired&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="355" y="-1050" width="90" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
