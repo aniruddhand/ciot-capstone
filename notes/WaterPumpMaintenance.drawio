@@ -1,14 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T17:13:14.063Z" agent="5.0 (Windows)" etag="fdwRRxrX6sSleuEf-vLf" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T17:13:58.986Z" agent="5.0 (Windows)" etag="z29d_uO9O1VOQpZl2x7f" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="l7niaom1AgPWsiwI2OuW-0" value="&lt;h1&gt;Water Pump Monitoring&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Sensors&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Sensor for determining water level in the water tank&lt;/li&gt;&lt;li&gt;Sensor for determining if water tank cap/lid has been opened?&lt;/li&gt;&lt;li&gt;Sensors for determining if water pump is running dry&lt;/li&gt;&lt;li&gt;Sensors for monitoring vibrations at critical places of the pump&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;h2&gt;Actuators&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Relay for turning on/off the motor&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="-2280" width="530" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-7" value="&lt;h1&gt;Water level sensor&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="-1120" width="270" height="30" as="geometry" />
+          <mxGeometry x="40" y="-2280" width="530" height="290" as="geometry" />
         </mxCell>
         <mxCell id="l7niaom1AgPWsiwI2OuW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="l7niaom1AgPWsiwI2OuW-9">
           <mxGeometry relative="1" as="geometry">
