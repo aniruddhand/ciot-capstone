@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T05:19:22.650Z" agent="5.0 (Windows)" etag="BzRRCU479FBuyDMYrdU4" version="15.4.1" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2021-10-09T06:44:41.958Z" agent="5.0 (Windows)" etag="L5Pz3FKybYMEkGK0bGOr" version="15.4.1" type="github" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -7,51 +7,116 @@
         <mxCell id="l7niaom1AgPWsiwI2OuW-0" value="&lt;h1&gt;Water Pump Monitoring&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Sensors&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Sensor for determining water level in the water tank&lt;/li&gt;&lt;li&gt;Sensor for determining if water tank cap/lid has been opened?&lt;/li&gt;&lt;li&gt;Sensors for determining if water pump is running dry&lt;/li&gt;&lt;li&gt;Sensors for monitoring vibrations at critical places of the pump&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;h2&gt;Actuators&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Relay for turning on/off the motor&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="40" y="-2280" width="530" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-6" value="Start" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="-1080" width="40" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="l7niaom1AgPWsiwI2OuW-7" value="&lt;h1&gt;Water level sensor&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="40" y="-1120" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l7niaom1AgPWsiwI2OuW-8" target="l7niaom1AgPWsiwI2OuW-9">
+        <mxCell id="l7niaom1AgPWsiwI2OuW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="l7niaom1AgPWsiwI2OuW-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="-730" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l7niaom1AgPWsiwI2OuW-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="l7niaom1AgPWsiwI2OuW-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="-650" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l7niaom1AgPWsiwI2OuW-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="l7niaom1AgPWsiwI2OuW-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="-570" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w3Ko5yxo8-d6X7UdVfKr" name="WaterLevelMonitoring">
+    <mxGraphModel dx="1333" dy="3123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="I5riBlE-sVRu2t_F8I45-0" />
+        <mxCell id="I5riBlE-sVRu2t_F8I45-1" parent="I5riBlE-sVRu2t_F8I45-0" />
+        <mxCell id="wKNySFnyqLLt88LWujrZ-0" value="&lt;h1&gt;Water Level Sensor&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Initialize unit&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;set interrupt priorities&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;initialize s/w stack&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;initialize n/w protocol stack&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Begin verification&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;check if sensors are connected&lt;span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;check if sensors are operating properly&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span&gt;Power on RF module&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Unit not registered &lt;/span&gt;&lt;span&gt;(by checking ROM?)&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;set count down&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;broadcast registration message securely&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;wait for acknowledgement from the main controller&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;on confirmation register main controller address (by writing to ROM)&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Activate sensors&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Set timer&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;On timeout&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;read sensor values&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;compute level&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;begin count down and send message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;message fails&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;try until count down expires&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;&lt;span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;set timer and go to power saving mode&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="-2160" width="720" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-0" target="dLBL7whKYPucpF0OWfQC-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-8" value="Read level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="110" y="-770" width="100" height="40" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-0" value="Read timer interrupt" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="190" y="-990" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l7niaom1AgPWsiwI2OuW-9" target="l7niaom1AgPWsiwI2OuW-10">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-1" target="dLBL7whKYPucpF0OWfQC-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-9" value="Send Redings" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="110" y="-690" width="100" height="40" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-1" value="Read sensors" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="160" y="-900" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l7niaom1AgPWsiwI2OuW-10" target="l7niaom1AgPWsiwI2OuW-11">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-2" target="dLBL7whKYPucpF0OWfQC-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l7niaom1AgPWsiwI2OuW-11" target="l7niaom1AgPWsiwI2OuW-8">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-2" value="Compute level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="160" y="-830" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-5" target="dLBL7whKYPucpF0OWfQC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-5" value="Read latest level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="370" y="-900" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-29" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-8" target="dLBL7whKYPucpF0OWfQC-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-44" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-8" target="dLBL7whKYPucpF0OWfQC-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-8" value="attempt &amp;lt; &lt;i&gt;n?&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="375" y="-830" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-17" target="dLBL7whKYPucpF0OWfQC-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-17" value="Store latest level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="160" y="-760" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-18" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="175" y="-690" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-23" target="dLBL7whKYPucpF0OWfQC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-23" value="Send timer interrupt" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="400" y="-990" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-24" target="dLBL7whKYPucpF0OWfQC-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-24" value="Send message" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="370" y="-710" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32" target="dLBL7whKYPucpF0OWfQC-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="-490" />
-              <mxPoint x="40" y="-750" />
+              <mxPoint x="320" y="-590" />
+              <mxPoint x="320" y="-880" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-21" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="l7niaom1AgPWsiwI2OuW-20">
-          <mxGeometry x="-0.678" y="1" relative="1" as="geometry">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-34" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-33">
+          <mxGeometry x="-0.535" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-10" value="Sleep" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="110" y="-610" width="100" height="40" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32" target="dLBL7whKYPucpF0OWfQC-40">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-11" value="&lt;div&gt;Timed&lt;/div&gt;&lt;div&gt;out?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="120" y="-530" width="80" height="80" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-32" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="375" y="-630" width="90" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-24" value="Configure device" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.27;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="310" y="-970" width="100" height="60" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-40" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="385" y="-510" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="l7niaom1AgPWsiwI2OuW-25" value="&lt;h1&gt;Water Level Sensor&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Check if sensors are connected&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;check if sensors are operating properly&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Check if device is already registered/configured&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;If not configured then set a timeout and wait for installer to configure it&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Times out then shutdown the controller&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;Installer connects to the device&lt;/span&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;If installer can be trusted then accept the configuration&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;If not then reject and set count down&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="-2000" width="720" height="320" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set timer" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="530" y="-815" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-45" value="&lt;h1&gt;Water level unit modes&lt;/h1&gt;&lt;div&gt;&lt;div&gt;&lt;h2&gt;Offline&lt;/h2&gt;&lt;div&gt;&lt;h2&gt;Online&lt;/h2&gt;&lt;div&gt;&lt;h2&gt;Faulty&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Sensing&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="-1720" width="560" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
