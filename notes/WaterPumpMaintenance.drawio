@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T17:10:35.789Z" agent="5.0 (Windows)" etag="gHdsr0ILPWz6MktzxFuT" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T17:13:14.063Z" agent="5.0 (Windows)" etag="fdwRRxrX6sSleuEf-vLf" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -34,7 +34,7 @@
         <mxCell id="I5riBlE-sVRu2t_F8I45-0" />
         <mxCell id="I5riBlE-sVRu2t_F8I45-1" parent="I5riBlE-sVRu2t_F8I45-0" />
         <mxCell id="wKNySFnyqLLt88LWujrZ-0" value="&lt;h1&gt;Water Level Monitoring Unit&lt;br&gt;&lt;/h1&gt;&lt;div&gt;Water level monitoring unit will be mainly comprised of:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt; sensors module, for sensing and computing water level&lt;/li&gt;&lt;li&gt;RF module for communicating with the main controller&lt;/li&gt;&lt;li&gt;reset button for resetting unit status and&lt;/li&gt;&lt;li&gt;RGB LED for showing the current status&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div&gt;The unit, upon bootstrap for the first time will initialize and register itself to the main controller. It then enters the main loop of periodically waking up and taking certain actions depending on the status of the unit.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Different actions and various statuses of the unit have been explained in the following sections.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="40" y="-2290" width="760" height="190" as="geometry" />
+          <mxGeometry x="40" y="-2290" width="760" height="250" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-243" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-2" target="dLBL7whKYPucpF0OWfQC-18">
           <mxGeometry relative="1" as="geometry" />
