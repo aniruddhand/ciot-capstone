@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T17:06:27.140Z" agent="5.0 (Windows)" etag="Fj_yuQTZBe16uXffVpFj" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T17:10:35.789Z" agent="5.0 (Windows)" etag="gHdsr0ILPWz6MktzxFuT" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -45,7 +45,7 @@
         <mxCell id="dLBL7whKYPucpF0OWfQC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-5" target="dLBL7whKYPucpF0OWfQC-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-5" value="Read latest level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-5" value="Read water level from register" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="551" y="3760" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-29" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-8" target="dLBL7whKYPucpF0OWfQC-24">
@@ -60,14 +60,14 @@
         <mxCell id="dLBL7whKYPucpF0OWfQC-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-24" target="dLBL7whKYPucpF0OWfQC-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-24" value="Send message" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-24" value="SendMessage" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="551" y="3960" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32" target="dLBL7whKYPucpF0OWfQC-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="521" y="4080" />
-              <mxPoint x="521" y="3780" />
+              <mxPoint x="530" y="4080" />
+              <mxPoint x="530" y="3780" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -76,20 +76,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32" target="dLBL7whKYPucpF0OWfQC-73">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-75" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="601" y="4160" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-32" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="556" y="4040" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-40" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="566" y="4240" width="70" height="40" as="geometry" />
+          <mxGeometry x="566" y="4160" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-43" target="dLBL7whKYPucpF0OWfQC-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set offline mode" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="698" y="3855" width="100" height="50" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set communication mode to OFFLINE" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="698" y="3852.5" width="112" height="55" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-45" value="&lt;div&gt;&lt;h2&gt;Connectivity status&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;Offline&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller failed&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Online&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller succeeded&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="-1840" width="360" height="220" as="geometry" />
@@ -137,24 +139,18 @@
         <mxCell id="dLBL7whKYPucpF0OWfQC-69" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="558" y="2400" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-73" target="dLBL7whKYPucpF0OWfQC-40">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-73" value="Set online mode" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="551" y="4160" width="100" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-78" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-77" target="dLBL7whKYPucpF0OWfQC-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-80" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-77" target="dLBL7whKYPucpF0OWfQC-40">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="481" y="3680" />
-              <mxPoint x="481" y="4260" />
+              <mxPoint x="510" y="3680" />
+              <mxPoint x="510" y="4180" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-77" value="&lt;div&gt;Online &lt;br&gt;&lt;/div&gt;&lt;div&gt;mode?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-77" value="Online?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="556" y="3640" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-62" value="&lt;div&gt;ComputeWater&lt;/div&gt;&lt;div&gt;Level&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
@@ -482,6 +478,9 @@
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-257" value="&lt;br&gt;&lt;h1&gt;ReadSensor&lt;/h1&gt;&lt;div&gt;The ReadSensor process involves:&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Communicating with sensor device&lt;/li&gt;&lt;li&gt;If communication succeeds then process ends&lt;br&gt;&lt;/li&gt;&lt;li&gt;Else retry to communicate with the sensor for configured number of times&lt;/li&gt;&lt;li&gt;If communication still fails then set the operation status as FAULTY and end the process&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="3030" width="420" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-262" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="472" y="3560" width="20" height="640" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
