@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T14:37:28.970Z" agent="5.0 (Windows)" etag="iGDIsX_R45TTB6btDTwM" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T16:01:17.292Z" agent="5.0 (Windows)" etag="v71tXnz6a0YUGfq9eILb" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -208,126 +208,86 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-83" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="615" y="-1080" width="90" height="50" as="geometry" />
+          <mxGeometry x="550" y="-1080" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-87" target="dLBL7whKYPucpF0OWfQC-89">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="-920" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-87" value="Initialize" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="610" y="-1000" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-89" target="dLBL7whKYPucpF0OWfQC-91">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-89" value="Start RF &lt;br&gt;&lt;div&gt;module&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="610" y="-920" width="100" height="40" as="geometry" />
+          <mxGeometry x="545" y="-1000" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-91" target="dLBL7whKYPucpF0OWfQC-92">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-91" value="&lt;div&gt;Check &lt;br&gt;&lt;/div&gt;&lt;div&gt;Registration&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="610" y="-840" width="100" height="40" as="geometry" />
+          <mxGeometry x="545" y="-920" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-92" target="dLBL7whKYPucpF0OWfQC-93">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-92" value="&lt;div&gt;Activate &lt;br&gt;&lt;/div&gt;&lt;div&gt;Sensors&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="610" y="-760" width="100" height="40" as="geometry" />
+          <mxGeometry x="545" y="-840" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-93" target="dLBL7whKYPucpF0OWfQC-94">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-93" value="Configure timer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="610" y="-680" width="100" height="40" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-93" value="ConfigureTimer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="545" y="-760" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-94" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="625" y="-600" width="70" height="40" as="geometry" />
+          <mxGeometry x="560" y="-680" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-101" target="dLBL7whKYPucpF0OWfQC-102">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-101" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="85" y="120" width="90" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-113" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-102" target="dLBL7whKYPucpF0OWfQC-107">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-102" target="dLBL7whKYPucpF0OWfQC-122">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-205" target="dLBL7whKYPucpF0OWfQC-122">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="-440" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="560" y="145" />
-              <mxPoint x="560" y="575" />
+              <mxPoint x="520" y="-440" />
+              <mxPoint x="520" y="-60" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-163" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-162">
-          <mxGeometry x="-0.7377" y="-1" relative="1" as="geometry">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-172" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-171">
+          <mxGeometry x="0.2857" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-102" value="Registered?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="240" y="105" width="90" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-114" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-107" target="dLBL7whKYPucpF0OWfQC-108">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-158" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-107" target="dLBL7whKYPucpF0OWfQC-122">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="200" y="295" />
-              <mxPoint x="200" y="575" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-107" value="attempt &amp;lt; &lt;i&gt;n?&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="240" y="255" width="90" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-108" target="dLBL7whKYPucpF0OWfQC-111">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-108" value="&lt;div&gt;Broadcast&lt;/div&gt;&lt;div&gt;Request&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="380" y="275" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-155" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-111" target="dLBL7whKYPucpF0OWfQC-121">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-111" target="dLBL7whKYPucpF0OWfQC-107">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-193" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-111" target="dLBL7whKYPucpF0OWfQC-175">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-157" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-156">
-          <mxGeometry x="-0.1125" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-111" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="385" y="355" width="90" height="80" as="geometry" />
+          <mxGeometry x="555" y="-280" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-121" target="dLBL7whKYPucpF0OWfQC-122">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-121" value="Set registration status" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="380" y="475" width="100" height="40" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-121" value="&lt;div&gt;Set&lt;/div&gt;&lt;div&gt;REGISTERED status&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="550" y="-160" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-122" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="395" y="555" width="70" height="40" as="geometry" />
+          <mxGeometry x="565" y="-80" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-124" target="dLBL7whKYPucpF0OWfQC-125">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-124" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="360" y="1320" width="90" height="50" as="geometry" />
+          <mxGeometry x="562" y="560" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-125" target="dLBL7whKYPucpF0OWfQC-126">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-125" value="ReadSensors" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="355" y="1400" width="100" height="40" as="geometry" />
+          <mxGeometry x="557" y="640" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-126" target="dLBL7whKYPucpF0OWfQC-129">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-126" value="Send Data" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="355" y="1480" width="100" height="40" as="geometry" />
+          <mxGeometry x="557" y="720" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-131" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-129" target="dLBL7whKYPucpF0OWfQC-130">
           <mxGeometry relative="1" as="geometry" />
@@ -336,16 +296,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-129" value="Online?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="360" y="1560" width="90" height="80" as="geometry" />
+          <mxGeometry x="562" y="800" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-130" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="370" y="1680" width="70" height="40" as="geometry" />
+          <mxGeometry x="572" y="920" width="70" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-136" target="dLBL7whKYPucpF0OWfQC-130">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-136" value="Power Saving Mode" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="525" y="1580" width="100" height="40" as="geometry" />
+          <mxGeometry x="680" y="820" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-150" value="&lt;br&gt;&lt;h1&gt;Read Sensors&lt;/h1&gt;&lt;div&gt;Read data from sensors, compute the water level and set the level in memory. Any issues in reading data will set appropriate connectivity mode.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="2338" width="360" height="120" as="geometry" />
@@ -353,20 +313,96 @@
         <mxCell id="dLBL7whKYPucpF0OWfQC-152" value="&lt;br&gt;&lt;h1&gt;Send Data&lt;/h1&gt;&lt;div&gt;Send data to main controller. Any failure will set appropriate operation mode.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="3540" width="360" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-153" value="&lt;h1&gt;Bootstrap&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Water level monitoring unit, upon startup, will perform certain tasks based on its last known state. There are three main factors which influence bootstrap process:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Registration status&lt;/li&gt;&lt;li&gt;Connectivity status and&lt;br&gt;&lt;/li&gt;&lt;li&gt;Operation status&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;To begin with, on the first boot up, these status will be NOT_REGISTERED, OFFLINE and NOT_INITIALIZED respectively.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bootstrap happens as shown in the flow chart. To start with it initializes the micro-controller by setting up appropriate interrupts, protocol stack etc.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Once completed it then starts the RF module (802.11/802.3/Zigbee etc.). It then checks if the unit is registered to the main controller node by checking certain ROM entries.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If the unit is not registered then it broadcasts a registration request. If the request is acknowledged by the legitimate main controller then the unit will update its ROM with the address of the main controller and sets the registration status as REGISTERED.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Unit is registered, so it proceeds further in the bootstrap process by initializing the sensors. If sensor initialization fails then operation status is set to FAULTY, else it is set to READY.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Then, as a final step, it initializes times and sets up its handler routine. With this the bootstrap process ends.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="40" y="-1120" width="440" height="500" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-159" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="515" y="-1080" width="10" height="520" as="geometry" />
-        </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-160" value="Check Registration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="40" y="80" width="120" height="30" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-153" value="&lt;h1&gt;Bootstrap&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Water level monitoring unit, upon startup, will perform certain tasks based on its last known state. There are three main factors which influence bootstrap process:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Registration status&lt;/li&gt;&lt;li&gt;Connectivity status and&lt;br&gt;&lt;/li&gt;&lt;li&gt;Operation status&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;To begin with, on the first boot up, these status will be NOT_REGISTERED, OFFLINE and NOT_INITIALIZED respectively.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bootstrap happens as shown in the flow chart. To start with it initializes the micro-controller by setting up appropriate interrupts, protocol stack etc.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Once completed it then starts the RF module (802.11/802.3/Zigbee etc.). It then checks if the unit is registered to the main controller node by checking certain ROM entries.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If the unit is not registered then it broadcasts a registration request. If the request is acknowledged by the legitimate main controller then the unit will update its ROM with the address of the main controller and sets the registration status as REGISTERED.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Unit is registered, so it proceeds further in the bootstrap process by initializing the sensors. If sensor initialization fails then operation status is set to FAULTY, else it is set to READY.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Then, as a final step, it initializes times and sets up its handler routine. With this the bootstrap process ends.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The following sections explain each process.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="-1120" width="420" height="520" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-161" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;h2&gt;Operation status&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;NOT_INITIALIZED&lt;/h3&gt;&lt;div&gt;Status is unknown&lt;br&gt;&lt;/div&gt;&lt;h3&gt;INITIALIZED&lt;br&gt;&lt;/h3&gt;&lt;p&gt;Sensors are initialized and ready for sensing&lt;br&gt;&lt;/p&gt;&lt;h3&gt;FAULTY&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors failed&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;SENSING&lt;br&gt;&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors succeeded&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="435" y="-2060" width="270" height="270" as="geometry" />
         </mxCell>
         <mxCell id="dLBL7whKYPucpF0OWfQC-165" value="&lt;h2&gt;Registration status&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;NOT_REGISTERED&lt;br&gt;&lt;/h3&gt;&lt;div&gt;The unit is not registered with the main controller&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;REGISTERED&lt;br&gt;&lt;/h3&gt;&lt;div&gt;The unit is registered with the main controller&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="40" y="-2040" width="360" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-166" value="&lt;h1&gt;CheckRegistration&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Registration status check process involves checking if the unit has already registered itself with the main controller.&lt;/p&gt;&lt;p&gt;If the unit has address of the main controller then it is said to be registered with. It knows which device to send status to in a secured way.&lt;/p&gt;&lt;p&gt;If the unit does not have the address then it needs to first register itself. To do so, it begins a &lt;b&gt;RegisterUnit &lt;/b&gt;process. It makes multiple attempts to register itself.&lt;/p&gt;&lt;p&gt;If successful then registration status is set to REGISTERED, else it will be set to NOT_REGISTERED and the process ends.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="-570" width="410" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-175" target="dLBL7whKYPucpF0OWfQC-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-175" value="&lt;div&gt;Set&lt;/div&gt;&lt;div&gt;NOT_REGISTERED&lt;/div&gt;&lt;div&gt;status&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="680" y="-265" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-181" value="&lt;h1&gt;RegisterUnit&lt;br&gt;&lt;/h1&gt;&lt;p&gt;In this process the unit broadcasts a registration messaging in a secured way.&lt;/p&gt;&lt;p&gt;The main controller, if it currently allows new registration, will verify that the request is from legitimate source and upon confirmation will register the unit in its DB and send an acknowledgement back. If the process succeeds then registration is said to be successful and the process ends.&lt;br&gt;&lt;/p&gt;&lt;p&gt;If for any reason the unit does not get an acknowledgment back within a specific period of time then the registration is said to be failed and it retries the same for configured number of times. If it still fails then the registration status is said to be unsuccessful and the process ends.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="40" width="340" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-182" target="dLBL7whKYPucpF0OWfQC-183">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-182" value="attempt &amp;lt; &lt;i&gt;n?&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="562" y="120" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-183" target="dLBL7whKYPucpF0OWfQC-184">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-183" value="Broadcast and wait" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="557" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-190" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-184" target="dLBL7whKYPucpF0OWfQC-186">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-184" target="dLBL7whKYPucpF0OWfQC-182">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="537" y="360" />
+              <mxPoint x="537" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-192" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dLBL7whKYPucpF0OWfQC-191">
+          <mxGeometry x="-0.3083" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-184" value="Successful?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="562" y="320" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-185" target="dLBL7whKYPucpF0OWfQC-182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-185" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="562" y="40" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-186" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="572" y="440" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-198" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="472" y="40" width="20" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-199" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="472" y="520" width="20" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-200" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;size=0.5;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="465" y="-1080" width="20" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-201" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="465" y="-560" width="20" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-207" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-204" target="dLBL7whKYPucpF0OWfQC-205">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-204" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="550" y="-560" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-208" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.44;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-205" target="dLBL7whKYPucpF0OWfQC-206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-205" value="Registered?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="550" y="-480" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-206" target="dLBL7whKYPucpF0OWfQC-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-206" value="RegisterUnit" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=0;strokeWidth=2;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="550" y="-360" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
