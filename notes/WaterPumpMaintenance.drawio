@@ -1,25 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T04:11:10.657Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15" etag="WwjYANAsCjI2iz6f4soz" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-09T04:11:49.640Z" agent="5.0 (Windows)" etag="bsaCIzEdrZynqSvWQOt_" version="15.4.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="613" dy="2895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1333" dy="2092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="jAdfjSSjhELqZVDht7EO-1" value="&lt;h1&gt;Water Pump Monitoring&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Sensors&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Sensor for determining water level in the water tank&lt;/li&gt;&lt;li&gt;Sensor for determining if water tank cap/lid has been opened?&lt;/li&gt;&lt;li&gt;Sensors for determining if water pump is running dry&lt;/li&gt;&lt;li&gt;Sensors for monitoring vibrations at critical places of the pump&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;h2&gt;Actuators&lt;br&gt;&lt;/h2&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;Relay for turning on/off the motor&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="-1810" width="530" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="zu7quKONwILufSVJRmsm-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="zu7quKONwILufSVJRmsm-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="220" y="10" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zu7quKONwILufSVJRmsm-2" value="&lt;h1&gt;Water level monitoring&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="zu7quKONwILufSVJRmsm-2" value="&lt;h1&gt;Water level monitoring&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="10" y="15" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zu7quKONwILufSVJRmsm-4" value="Read level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="zu7quKONwILufSVJRmsm-4" value="Read level" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="100" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zu7quKONwILufSVJRmsm-7" value="Send" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="zu7quKONwILufSVJRmsm-7" value="Send" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="180" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zu7quKONwILufSVJRmsm-8" value="Sleep" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="zu7quKONwILufSVJRmsm-8" value="Sleep" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="260" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
