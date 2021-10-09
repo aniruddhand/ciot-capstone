@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-09T06:44:41.958Z" agent="5.0 (Windows)" etag="L5Pz3FKybYMEkGK0bGOr" version="15.4.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-09T07:27:11.187Z" agent="5.0 (Windows)" etag="pZ5CTEgwnI83ZD2XtmUQ" version="15.4.1" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1333" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -112,11 +112,17 @@
         <mxCell id="dLBL7whKYPucpF0OWfQC-40" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="385" y="-510" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set timer" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+        <mxCell id="dLBL7whKYPucpF0OWfQC-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="I5riBlE-sVRu2t_F8I45-1" source="dLBL7whKYPucpF0OWfQC-43" target="dLBL7whKYPucpF0OWfQC-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-43" value="Set mode to Offline" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
           <mxGeometry x="530" y="-815" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="dLBL7whKYPucpF0OWfQC-45" value="&lt;h1&gt;Water level unit modes&lt;/h1&gt;&lt;div&gt;&lt;div&gt;&lt;h2&gt;Offline&lt;/h2&gt;&lt;div&gt;&lt;h2&gt;Online&lt;/h2&gt;&lt;div&gt;&lt;h2&gt;Faulty&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Sensing&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
-          <mxGeometry x="40" y="-1720" width="560" height="300" as="geometry" />
+        <mxCell id="dLBL7whKYPucpF0OWfQC-45" value="&lt;h1&gt;Water level unit modes&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Connectivity mode&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;h3&gt;Offline&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller failed&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Online&lt;/h3&gt;&lt;div&gt;Last attempt to connect to the main controller succeeded&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Operation mode&lt;br&gt;&lt;/h2&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Faulty&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors failed&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Sensing&lt;/h3&gt;&lt;div&gt;Last attempt to read sensors succeeded&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="40" y="-1720" width="600" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="dLBL7whKYPucpF0OWfQC-47" value="Switch to power save mode?" style="whiteSpace=wrap;html=1;" vertex="1" parent="I5riBlE-sVRu2t_F8I45-1">
+          <mxGeometry x="530" y="-720" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
