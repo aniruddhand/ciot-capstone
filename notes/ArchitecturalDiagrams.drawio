@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T14:26:35.407Z" agent="5.0 (Windows)" etag="UCmAiZgTnSZ_uiPUmpKx" version="15.5.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-10T14:32:26.147Z" agent="5.0 (Windows)" etag="ETsdEqW-T-kJ6PA2zyYp" version="15.5.0" type="github" pages="2">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -54,7 +54,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Ttf5dBiDv8K-FQWBMyL2-2" value="Sensors" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ttf5dBiDv8K-FQWBMyL2-1">
-          <mxGeometry x="313.23" y="640" width="170" height="60" as="geometry" />
+          <mxGeometry x="510" y="640" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ttf5dBiDv8K-FQWBMyL2-4" value="" style="line;strokeWidth=2;html=1;dashed=1;" vertex="1" parent="Ttf5dBiDv8K-FQWBMyL2-1">
           <mxGeometry x="18.23" y="579.5" width="760" height="10" as="geometry" />
