@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T16:11:12.052Z" agent="5.0 (Windows)" etag="7souZON3HlvNktKbEOrz" version="15.5.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-10-10T16:29:02.781Z" agent="5.0 (Windows)" etag="0QLuHvO0fV8AeinR3MIv" version="15.5.0" type="github" pages="6">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -258,6 +258,47 @@
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-10" value="DynamoDB" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
           <mxGeometry x="260" y="350" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="On10oEBO6tBtGsD5cgpU" name="AndriodApplicationModules">
+    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Idi5D3M-ftoEXOwwWkmO-0" />
+        <mxCell id="Idi5D3M-ftoEXOwwWkmO-1" parent="Idi5D3M-ftoEXOwwWkmO-0" />
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-0" value="AndriodApplication" style="html=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="Idi5D3M-ftoEXOwwWkmO-1">
+          <mxGeometry x="200" y="40" width="410" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-1" value="AndriodSDK" style="html=1;" vertex="1" parent="Idi5D3M-ftoEXOwwWkmO-1">
+          <mxGeometry x="210" y="180" width="390" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-2" value="ReactNative" style="html=1;" vertex="1" parent="Idi5D3M-ftoEXOwwWkmO-1">
+          <mxGeometry x="430" y="120" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-3" value="&lt;div&gt;Application &lt;br&gt;&lt;/div&gt;&lt;div&gt;Services&lt;/div&gt;" style="html=1;" vertex="1" parent="Idi5D3M-ftoEXOwwWkmO-1">
+          <mxGeometry x="210" y="50" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-13" value="" style="group" vertex="1" connectable="0" parent="Idi5D3M-ftoEXOwwWkmO-1">
+          <mxGeometry x="340" y="50" width="260" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-12" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;labelBackgroundColor=default;labelBorderColor=#FFFFFF;fontColor=#000000;rotation=-90;" vertex="1" parent="b-i1JJJTPznXJvv-LO7J-13">
+          <mxGeometry x="215" y="15" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-14" value="" style="group" vertex="1" connectable="0" parent="b-i1JJJTPznXJvv-LO7J-13">
+          <mxGeometry width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-7" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;labelBackgroundColor=default;labelBorderColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="b-i1JJJTPznXJvv-LO7J-14">
+          <mxGeometry y="60" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-8" value="UI" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;labelBackgroundColor=default;labelBorderColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="b-i1JJJTPznXJvv-LO7J-14">
+          <mxGeometry x="80" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-9" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;labelBackgroundColor=default;labelBorderColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="b-i1JJJTPznXJvv-LO7J-14">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b-i1JJJTPznXJvv-LO7J-19" value="UI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;labelBorderColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="b-i1JJJTPznXJvv-LO7J-14">
+          <mxGeometry x="70" y="15" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
