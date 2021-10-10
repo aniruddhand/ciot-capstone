@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T15:50:09.285Z" agent="5.0 (Windows)" etag="FNjPFyq6ShoC-cUqyGx3" version="15.5.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-10-10T16:03:51.272Z" agent="5.0 (Windows)" etag="WbisG3Ulwo3SDhZf9pil" version="15.5.0" type="github" pages="5">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -217,6 +217,35 @@
         </mxCell>
         <mxCell id="-nK_Pj9BdM7_q5FOmMfD-30" value="LCD" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
           <mxGeometry x="520" y="235" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tIOqvEWg_Bjky3QYjSJH" name="CloudServicesModules">
+    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="nkq-LPkAGhq8cFQmONQR-0" />
+        <mxCell id="nkq-LPkAGhq8cFQmONQR-1" parent="nkq-LPkAGhq8cFQmONQR-0" />
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-0" value="CloudServices" style="html=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="230" y="160" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-1" value="IoTCore" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="250" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-2" value="IoTAnalytics" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="380" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-3" value="Elastic Beanstalk" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="250" y="250" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-4" value="Security" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="380" y="250" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-5" value="&lt;div&gt;Certificate &lt;br&gt;&lt;/div&gt;&lt;div&gt;Management&lt;/div&gt;" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="250" y="320" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-6" value="Rules Engine" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="380" y="320" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
