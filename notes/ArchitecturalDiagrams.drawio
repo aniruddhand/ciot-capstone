@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T16:04:49.676Z" agent="5.0 (Windows)" etag="9HCsQxWDTpBL3c4olHto" version="15.5.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-10-10T16:11:12.052Z" agent="5.0 (Windows)" etag="7souZON3HlvNktKbEOrz" version="15.5.0" type="github" pages="5">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -227,7 +227,7 @@
         <mxCell id="nkq-LPkAGhq8cFQmONQR-0" />
         <mxCell id="nkq-LPkAGhq8cFQmONQR-1" parent="nkq-LPkAGhq8cFQmONQR-0" />
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-0" value="CloudServices" style="html=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
-          <mxGeometry x="240" y="160" width="280" height="210" as="geometry" />
+          <mxGeometry x="240" y="160" width="410" height="260" as="geometry" />
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-1" value="IoTCore" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
           <mxGeometry x="260" y="170" width="110" height="50" as="geometry" />
@@ -236,16 +236,28 @@
           <mxGeometry x="390" y="170" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-3" value="Elastic Beanstalk" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
-          <mxGeometry x="260" y="240" width="110" height="50" as="geometry" />
+          <mxGeometry x="520" y="170" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-4" value="Security" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
-          <mxGeometry x="390" y="240" width="110" height="50" as="geometry" />
+          <mxGeometry x="260" y="230" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-5" value="&lt;div&gt;Certificate &lt;br&gt;&lt;/div&gt;&lt;div&gt;Management&lt;/div&gt;" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
-          <mxGeometry x="260" y="310" width="110" height="50" as="geometry" />
+          <mxGeometry x="390" y="230" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LRPqT3HsKzQ_4xVpvLZV-6" value="Rules Engine" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
-          <mxGeometry x="390" y="310" width="110" height="50" as="geometry" />
+          <mxGeometry x="520" y="230" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-7" value="SNS" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="260" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-8" value="API Gateway" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="390" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-9" value="Lambda" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="520" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LRPqT3HsKzQ_4xVpvLZV-10" value="DynamoDB" style="html=1;" vertex="1" parent="nkq-LPkAGhq8cFQmONQR-1">
+          <mxGeometry x="260" y="350" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
