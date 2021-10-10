@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T13:14:47.817Z" agent="5.0 (Windows)" etag="GanZPcI-zoN4T9tR5D_X" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-10T13:16:32.833Z" agent="5.0 (Windows)" etag="0BVQZufyNAAHyT8QLwBk" version="15.5.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -17,26 +17,30 @@
           <mxGeometry x="320" y="220" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--6" value="CloudServices" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="360" width="160" height="80" as="geometry" />
+          <mxGeometry x="320" y="350" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="400" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="480" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--8" value="WebApplication" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="520" width="160" height="80" as="geometry" />
+          <mxGeometry x="200" y="500" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--9" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
+        <mxCell id="oBOZgDLwv16d5uzjFYr--17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--9" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="490" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="520" y="500" />
-              <mxPoint x="400" y="500" />
+              <mxPoint x="520" y="480" />
+              <mxPoint x="400" y="480" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--9" value="MobileApplication" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="520" width="160" height="80" as="geometry" />
+          <mxGeometry x="440" y="505" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--20" edge="1">
           <mxGeometry relative="1" as="geometry">
