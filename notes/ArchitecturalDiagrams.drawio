@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T15:30:06.615Z" agent="5.0 (Windows)" etag="jRMTEFL9TYL9L7ZPkcW3" version="15.5.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-10T15:50:09.285Z" agent="5.0 (Windows)" etag="FNjPFyq6ShoC-cUqyGx3" version="15.5.0" type="github" pages="4">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -149,7 +149,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="m6PUykt0Kee2z2DeanL4" name="WaterLevelMonitoringModules">
+  <diagram id="m6PUykt0Kee2z2DeanL4" name="WaterLevelMonitoringUnitModules">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="NXMpJnTbf4C4yQFGdpyi-0" />
@@ -188,6 +188,35 @@
         </mxCell>
         <mxCell id="NXMpJnTbf4C4yQFGdpyi-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="NXMpJnTbf4C4yQFGdpyi-1" source="NXMpJnTbf4C4yQFGdpyi-10" target="NXMpJnTbf4C4yQFGdpyi-2">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="usQ0zEamdsFVd2ZsBnqa" name="MainControllerUnitModules">
+    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="w3Sr4SiCmkd6kHkvMg46-0" />
+        <mxCell id="w3Sr4SiCmkd6kHkvMg46-1" parent="w3Sr4SiCmkd6kHkvMg46-0" />
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-2" value="Microcontroller" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="230" y="160" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-5" value="WiFi Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="400" y="90" width="54" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-22" value="Cellular Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="250" y="90" width="54" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-25" target="-nK_Pj9BdM7_q5FOmMfD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-25" value="Power Line" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="300" y="410" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-30" target="-nK_Pj9BdM7_q5FOmMfD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-30" value="LCD" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="520" y="235" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
