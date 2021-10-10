@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T09:06:53.262Z" agent="5.0 (Windows)" etag="iXSIGIL6pu8rXqSYA8GE" version="15.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-10T13:14:47.817Z" agent="5.0 (Windows)" etag="GanZPcI-zoN4T9tR5D_X" version="15.5.0" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="oBOZgDLwv16d5uzjFYr--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--1" target="oBOZgDLwv16d5uzjFYr--3" edge="1">
+        <mxCell id="oBOZgDLwv16d5uzjFYr--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--1" target="oBOZgDLwv16d5uzjFYr--3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--1" value="WaterLevelMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="120" width="160" height="80" as="geometry" />
+          <mxGeometry x="180" y="80" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--3" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -16,20 +16,8 @@
         <mxCell id="oBOZgDLwv16d5uzjFYr--3" value="MainControllerUnit" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="220" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--4" target="oBOZgDLwv16d5uzjFYr--3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--4" value="WaterLevelMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="220" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--5" target="oBOZgDLwv16d5uzjFYr--3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--5" value="WaterLevelMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="320" width="160" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--6" value="CloudServices" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="400" width="160" height="80" as="geometry" />
+          <mxGeometry x="320" y="360" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--8" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -37,33 +25,26 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--8" value="WebApplication" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="560" width="160" height="80" as="geometry" />
+          <mxGeometry x="200" y="520" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--9" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--9" value="MobileApplication" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="560" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--20" target="oBOZgDLwv16d5uzjFYr--3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--20" value="WaterPumpMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="600" y="120" width="160" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--21" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="480" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="500" />
+              <mxPoint x="400" y="500" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--21" value="WaterPumpMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="600" y="220" width="160" height="80" as="geometry" />
+        <mxCell id="oBOZgDLwv16d5uzjFYr--9" value="MobileApplication" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="520" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--22" target="oBOZgDLwv16d5uzjFYr--3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="oBOZgDLwv16d5uzjFYr--24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="210" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="oBOZgDLwv16d5uzjFYr--22" value="WaterPumpMonitoringUnit" style="html=1;" parent="1" vertex="1">
-          <mxGeometry x="600" y="320" width="160" height="80" as="geometry" />
+        <mxCell id="oBOZgDLwv16d5uzjFYr--20" value="WaterPumpMonitoringUnit" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="80" width="160" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
