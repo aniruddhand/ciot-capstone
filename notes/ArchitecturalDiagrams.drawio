@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-10-10T17:34:53.687Z" agent="5.0 (Windows)" etag="wZmXU4LQY7pn4G-PZ1U_" version="15.5.0" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2021-10-12T17:03:12.482Z" agent="5.0 (Windows)" etag="-AOLQLY0jsDhPgU34mMe" version="15.5.0" type="github" pages="9">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
-    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1328" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--1" target="oBOZgDLwv16d5uzjFYr--3">
+        <mxCell id="GNZlEFtAwHhBjWwg_19B-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--1" target="oBOZgDLwv16d5uzjFYr--3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="240" y="120" />
@@ -15,7 +15,7 @@
         <mxCell id="oBOZgDLwv16d5uzjFYr--1" value="WaterLevelMonitoringUnit" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="80" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--3" target="oBOZgDLwv16d5uzjFYr--6">
+        <mxCell id="GNZlEFtAwHhBjWwg_19B-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--3" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--3" value="MainControllerUnit" style="html=1;" parent="1" vertex="1">
@@ -24,13 +24,13 @@
         <mxCell id="oBOZgDLwv16d5uzjFYr--6" value="CloudServices" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="150" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--9" target="oBOZgDLwv16d5uzjFYr--6">
+        <mxCell id="GNZlEFtAwHhBjWwg_19B-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--9" target="oBOZgDLwv16d5uzjFYr--6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oBOZgDLwv16d5uzjFYr--9" value="MobileApplication" style="html=1;" parent="1" vertex="1">
           <mxGeometry x="290" y="300" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GNZlEFtAwHhBjWwg_19B-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="oBOZgDLwv16d5uzjFYr--20">
+        <mxCell id="GNZlEFtAwHhBjWwg_19B-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="oBOZgDLwv16d5uzjFYr--20" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="290" y="190" as="targetPoint" />
             <Array as="points">
@@ -245,73 +245,76 @@
     </mxGraphModel>
   </diagram>
   <diagram id="m6PUykt0Kee2z2DeanL4" name="WaterLevelMonitoringUnitModules">
-    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1328" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="NXMpJnTbf4C4yQFGdpyi-0" />
         <mxCell id="NXMpJnTbf4C4yQFGdpyi-1" parent="NXMpJnTbf4C4yQFGdpyi-0" />
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="NXMpJnTbf4C4yQFGdpyi-1" source="NXMpJnTbf4C4yQFGdpyi-2" target="NXMpJnTbf4C4yQFGdpyi-3">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="NXMpJnTbf4C4yQFGdpyi-1" source="NXMpJnTbf4C4yQFGdpyi-2" target="NXMpJnTbf4C4yQFGdpyi-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-5" value="I2C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NXMpJnTbf4C4yQFGdpyi-4">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-5" value="I2C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NXMpJnTbf4C4yQFGdpyi-4" vertex="1" connectable="0">
           <mxGeometry x="0.3143" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-2" value="Microcontroller" style="html=1;" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-2" value="Microcontroller" style="html=1;" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1">
           <mxGeometry x="230" y="160" width="250" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-3" value="&lt;div&gt;Ultrasonic&lt;/div&gt;&lt;div&gt;Sensor&lt;br&gt;&lt;/div&gt;" style="html=1;" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-3" value="&lt;div&gt;Ultrasonic&lt;/div&gt;&lt;div&gt;Sensor&lt;br&gt;&lt;/div&gt;" style="html=1;" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1">
           <mxGeometry x="550" y="235" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-6" value="Power - Battery" style="html=1;" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-6" value="Power - Battery" style="html=1;" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1">
           <mxGeometry x="230" y="430" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-7" value="WiFi Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-7" value="WiFi Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1">
           <mxGeometry x="328" y="90" width="54" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-8" value="Power Management Unit" style="html=1;" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-8" value="Power Management Unit" style="html=1;" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1">
           <mxGeometry x="230" y="370" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-11" value="" style="group" vertex="1" connectable="0" parent="NXMpJnTbf4C4yQFGdpyi-1">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-11" value="" style="group" parent="NXMpJnTbf4C4yQFGdpyi-1" vertex="1" connectable="0">
           <mxGeometry x="140" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-9" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/CMYK.png" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-11">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-9" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/32x32-free-design-icons/32/CMYK.png" parent="NXMpJnTbf4C4yQFGdpyi-11" vertex="1">
           <mxGeometry x="15" y="10" width="10" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-10" value="Power/Status LED" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/electronic-13/480/6-electronic-led-icon-2-128.png" vertex="1" parent="NXMpJnTbf4C4yQFGdpyi-11">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-10" value="Power/Status LED" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/electronic-13/480/6-electronic-led-icon-2-128.png" parent="NXMpJnTbf4C4yQFGdpyi-11" vertex="1">
           <mxGeometry width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NXMpJnTbf4C4yQFGdpyi-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="NXMpJnTbf4C4yQFGdpyi-1" source="NXMpJnTbf4C4yQFGdpyi-10" target="NXMpJnTbf4C4yQFGdpyi-2">
+        <mxCell id="NXMpJnTbf4C4yQFGdpyi-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="NXMpJnTbf4C4yQFGdpyi-1" source="NXMpJnTbf4C4yQFGdpyi-10" target="NXMpJnTbf4C4yQFGdpyi-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="usQ0zEamdsFVd2ZsBnqa" name="MainControllerUnitModules">
-    <mxGraphModel dx="1333" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1328" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="w3Sr4SiCmkd6kHkvMg46-0" />
         <mxCell id="w3Sr4SiCmkd6kHkvMg46-1" parent="w3Sr4SiCmkd6kHkvMg46-0" />
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-2" value="Microcontroller" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-2" value="Microcontroller" style="html=1;" parent="w3Sr4SiCmkd6kHkvMg46-1" vertex="1">
           <mxGeometry x="230" y="160" width="250" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-5" value="WiFi Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-5" value="WiFi Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" parent="w3Sr4SiCmkd6kHkvMg46-1" vertex="1">
           <mxGeometry x="400" y="90" width="54" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-22" value="Cellular Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-22" value="Cellular Antenna" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;" parent="w3Sr4SiCmkd6kHkvMg46-1" vertex="1">
           <mxGeometry x="250" y="90" width="54" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-25" target="-nK_Pj9BdM7_q5FOmMfD-2">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-25" target="-nK_Pj9BdM7_q5FOmMfD-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-25" value="Power Line" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-25" value="Power Line" style="html=1;" parent="w3Sr4SiCmkd6kHkvMg46-1" vertex="1">
           <mxGeometry x="300" y="410" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-30" target="-nK_Pj9BdM7_q5FOmMfD-2">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="w3Sr4SiCmkd6kHkvMg46-1" source="-nK_Pj9BdM7_q5FOmMfD-30" target="-nK_Pj9BdM7_q5FOmMfD-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-30" value="LCD" style="html=1;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+        <mxCell id="-nK_Pj9BdM7_q5FOmMfD-30" value="LCD" style="html=1;" parent="w3Sr4SiCmkd6kHkvMg46-1" vertex="1">
           <mxGeometry x="520" y="235" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rfZUmqIrSHunZfeXzdem-0" value="Bluetooth" style="verticalLabelPosition=top;shadow=0;dashed=0;align=center;html=1;verticalAlign=bottom;shape=mxgraph.electrical.radio.aerial_-_antenna_2;labelPosition=center;rotation=-90;" vertex="1" parent="w3Sr4SiCmkd6kHkvMg46-1">
+          <mxGeometry x="170" y="225" width="54" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
