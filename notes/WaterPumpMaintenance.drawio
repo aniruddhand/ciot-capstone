@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-23T06:00:22.359Z" agent="5.0 (Windows)" etag="MRgbAXQjo5LLExR3kLv-" version="15.5.2" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-10-23T08:10:31.451Z" agent="5.0 (Windows)" etag="F9GNfbmEi9cOHamkYWW8" version="15.5.2" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overview">
     <mxGraphModel dx="1328" dy="3261" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -487,8 +487,11 @@
       <root>
         <mxCell id="YykmiQ8ZA0Bq_BZvH-_B-0" />
         <mxCell id="YykmiQ8ZA0Bq_BZvH-_B-1" parent="YykmiQ8ZA0Bq_BZvH-_B-0" />
-        <mxCell id="YykmiQ8ZA0Bq_BZvH-_B-2" value="&lt;h1&gt;Main Controller Unit&lt;/h1&gt;&lt;p&gt;The MainControllerUnit will be responsible for collecting data from water level and water flow sensors, turn pump on/off and synchronize collected data to the cloud at regular interval.&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="YykmiQ8ZA0Bq_BZvH-_B-1">
-          <mxGeometry x="40" y="40" width="720" height="160" as="geometry" />
+        <mxCell id="YykmiQ8ZA0Bq_BZvH-_B-2" value="&lt;h1&gt;Main Controller Unit&lt;/h1&gt;&lt;p&gt;The MainControllerUnit will be responsible for collecting data from water level and water flow sensors, turn pump on/off and synchronize collected data to the cloud at regular interval.&lt;/p&gt;&lt;p&gt;One or more controller units can exist in large apartments.&lt;/p&gt;&lt;p&gt;Setting up controller units involve:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strike&gt;Registering unit with the cloud service?&lt;/strike&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Registering set of water level sensors so that they work collectively&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="YykmiQ8ZA0Bq_BZvH-_B-1">
+          <mxGeometry x="40" y="40" width="720" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ir4l6xFykn5DRIUFMRW0-2" value="&lt;h1&gt;Installation process&lt;/h1&gt;&lt;div&gt;&lt;h2&gt;Installing main controller and smart plug&lt;/h2&gt;&lt;/div&gt;&lt;p&gt;Every package will come with a QR code scanner. User must scan the code and perform some steps in order to register the product:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;User installs (physical) the main controller and turns it on&lt;/li&gt;&lt;li&gt;Since the package is not registered yet, it will display QR code in its display panel&lt;br&gt;&lt;/li&gt;&lt;li&gt;Using app user scans the QR code and completes registration process&lt;br&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Once completed, cloud server will communicate with the controller to indicate completion of registration&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;User plugs in the wireless smart plug into the socket, from which power would be supplied to water pump, and then plugs in power adapter to the smart plug socket&lt;/li&gt;&lt;li&gt;User then pairs smart socket with the controller unit&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="YykmiQ8ZA0Bq_BZvH-_B-1">
+          <mxGeometry x="40" y="320" width="760" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
