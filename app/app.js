@@ -21,6 +21,7 @@ var buildingRouter = require('./routes/building');
 var apartmentsRouter = require('./routes/apartments');
 var apartmentRouter = require('./routes/apartment');
 var registrationsRouter = require('./routes/registrations');
+var timeseriesRouter = require('./routes/timeseries');
 
 var sessionValidator = require('./lib/session_validator');
 var sessionTTLSetter = require('./lib/session_ttl_setter');
@@ -45,6 +46,7 @@ app.use('/logout', logoutRouter);
 app.use('/register', registrationsRouter);
 app.use('/session', sessionRouter);
 app.use('/status', statusRouter);
+app.use('/timeseries', timeseriesRouter);
 
 app.use((err, req, res, next) => {
     console.log(err.toString());

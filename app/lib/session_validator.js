@@ -1,13 +1,13 @@
 const { StatusCodes } = require('http-status-codes');
 
-const ignorePaths = ['/login', '/logout', '/register'];
+const ignorePaths = ['/login', '/logout', '/register', '/timeseries/synthetic'];
 
 function sessionNotActive(req) {
     return (req.session && !req.session.tenantUuid);
 }
 
 function pathRequiresAuth(req) {
-    return !ignorePaths.find(path => path === req.url);
+    return !ignorePaths.find(path => req.url.startsWith(path));
 }
 
 module.exports = function(options) {
