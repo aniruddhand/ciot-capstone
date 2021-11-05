@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-05T19:15:15.895Z" agent="5.0 (Windows)" etag="LlVwsltJEQSUmmeS1UFT" version="15.6.8" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2021-11-05T21:51:34.054Z" agent="5.0 (Windows)" etag="Z_jXIYAe0zv3jon0q6ZP" version="15.6.8" type="github" pages="10">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="ComponentsView">
     <mxGraphModel dx="1328" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -783,13 +783,13 @@
             <mxPoint x="340" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KwCkG8Xs7pvxf3WsMuCr-39" value="SLGTimeSeries" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="fBO1xx1hZP4Qy7LOSjeA-1">
+        <mxCell id="KwCkG8Xs7pvxf3WsMuCr-39" value="SLGWTimeSeries" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="fBO1xx1hZP4Qy7LOSjeA-1">
           <mxGeometry x="480" y="1920" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="KwCkG8Xs7pvxf3WsMuCr-40" value="+TenantUUID&#xa;+ThingID&#xa;+Timestamp&#xa;+Volume" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="KwCkG8Xs7pvxf3WsMuCr-39">
           <mxGeometry y="30" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="KwCkG8Xs7pvxf3WsMuCr-41" value="WLGTimeSeries" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="fBO1xx1hZP4Qy7LOSjeA-1">
+        <mxCell id="KwCkG8Xs7pvxf3WsMuCr-41" value="WLGWTimeSeries" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="fBO1xx1hZP4Qy7LOSjeA-1">
           <mxGeometry x="280" y="1920" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="KwCkG8Xs7pvxf3WsMuCr-42" value="+TenantUUID&#xa;+ThingID&#xa;+Timestamp&#xa;+Volume" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="KwCkG8Xs7pvxf3WsMuCr-41">
