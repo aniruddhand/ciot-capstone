@@ -11,7 +11,7 @@ function buildGetTenantCommand(tenant) {
         ExpressionAttributeNames: {
             '#id': 'UUID'
         },
-        ProjectionExpression: '#id, Email'
+        ProjectionExpression: '#id, Email, FullName'
     };
 
     return cmdPayload;
@@ -32,6 +32,9 @@ function buildPutTenantCommand(tenant) {
                     },
                     'CellPhone': {
                         N: tenant.cellPhone
+                    },
+                    'FullName': {
+                        S: tenant.fullName
                     }
                 }
             }

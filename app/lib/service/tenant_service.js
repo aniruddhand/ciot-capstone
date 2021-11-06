@@ -28,9 +28,9 @@ async function createTenant(tenant) {
 }
 
 async function authorizeTenant(tenant) {
-    return new Promise((resolve, reject) => {
-        validateLogin(tenant);
+    await validateLogin(tenant);
 
+    return new Promise((resolve, reject) => {
         client.getItem(buildGetTenantCommand(tenant), (error, data) => {
             if (error) {
                 reject(error);
@@ -39,15 +39,19 @@ async function authorizeTenant(tenant) {
 
             if (data && data.Item) {
                 tenant.uuid = data.Item.UUID.S;
+
                 client.query(buildQueryTenantAuthCommand(tenant), (error, data) => {
                     if (error) {
                         reject(error);
                         return;
                     }
 
-                    resolve(data && data.Items 
+                    if (data && data.Items 
                         && data.Items.length == 1 && data.Items[0].Pin
-                        && data.Items[0].Pin.B.toString() === tenant.pin ? tenant.uuid : undefined);
+                        && data.Items[0].Pin.B.toString() === tenant.pin) {
+                        delete tenant.pin;  
+                        resolve(tenant);
+                    }
                 });
             }
         });

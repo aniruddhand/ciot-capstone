@@ -1,0 +1,9 @@
+{
+  "short_name": "CIOT-WMA",
+  "name": "Smart Water Management System for Appartments",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

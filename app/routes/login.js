@@ -11,18 +11,19 @@ router.post('/', async function(req, res, next) {
         return;
     }
 
-    const tenantUuid = await authorizeTenant(req.body).catch(error => {
+    const tenant = await authorizeTenant(req.body).catch(error => {
         next(error);
         return;
     });
 
-    if (tenantUuid) {
-        req.session.tenantUuid = tenantUuid;
+    if (tenant) {
+        req.session.tenantUuid = tenant.uuid;
+        req.session.email = tenant.email;
+        req.session.fullName = tenant.fullName;
     }
 
-    res.json(tenantUuid ? 
-        AuthorizationMessages.Authorized
-        : AuthorizationMessages.Unauthorized);
+    res.setHeader('Content-Type', 'application/json');
+    res.json(tenant ? tenant : AuthorizationMessages.Unauthorized);
 });
 
 module.exports = router;

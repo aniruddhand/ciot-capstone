@@ -5,7 +5,9 @@ var router = express.Router();
 /* Get current session, if present. */
 router.get('/', function(req, res, next) {
     res.send({
-        "tenantId": req.session.id
+        'tenantUuid': req.session.tenantUuid,
+        'email': req.session.email,
+        'fullName': req.session.fullName
     });
 });
 

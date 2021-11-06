@@ -1,6 +1,6 @@
 const { StatusCodes } = require('http-status-codes');
 
-const ignorePaths = ['/login', '/logout', '/register', '/timeseries/synthetic'];
+const ignorePaths = ['/api/login', '/api/logout', '/api/register', '/api/timeseries/synthetic'];
 
 function sessionNotActive(req) {
     return (req.session && !req.session.tenantUuid);
