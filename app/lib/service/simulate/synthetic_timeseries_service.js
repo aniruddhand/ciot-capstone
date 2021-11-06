@@ -1,4 +1,7 @@
-const { AcitivityConsumptionPercentage, Activity, PCPDConsumption } = require("../../models/timeseries_profile");
+const { AcitivityConsumptionPercentage, Activity, PCPDConsumption } = require("../../../models/timeseries_profile");
+const { get } = require("../../../routes/summary");
+
+const stepSizeInMillis = 60 * 1000;
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -70,13 +73,32 @@ function drinkWater(timeseries, family, member) {
     timeseries[randomTime4] = todaysConsumption;
 }
 
+function openTap(timeseries, family, member) {
+    if (!member.opensTapBtw) {
+        return;
+    }
+
+    for (var i = member.opensTapBtw[0]; i <= member.opensTapBtw[1]; i += stepSizeInMillis) {
+        timeseries[i] = 4;
+    }
+}
+
 function performCommonActivity(timeseries, family, member, activity, activityTimeRange) {
+    var ranges = activityTimeRange;
+    if (!activityTimeRange[0].length) {
+        ranges = [activityTimeRange];
+    }
+
+    // This the percentage allotted by Govt. bodies
     const activityPercentage = AcitivityConsumptionPercentage[family.economicSection][activity];
-    const todaysConsumption = ((member.pcpd * activityPercentage)/100);
 
-    const todaysActivityTime = getRandomIntInclusive(activityTimeRange[0], activityTimeRange[1]);
+    // Assuming that activity is distributed evenly amongst all the ranges
+    const perActivityConsumption = (((member.pcpd * activityPercentage)/100)/ranges.length);
 
-    timeseries[todaysActivityTime] = todaysConsumption;    
+    ranges.forEach(range => {
+        const timeWithinARange = getRandomIntInclusive(range[0], range[1]);
+        timeseries[timeWithinARange] = perActivityConsumption;    
+    });
 }
 
 function fixTodaysWakeupAndSleepTime(family, member) {
@@ -99,7 +121,7 @@ function fixTodaysConsumptionVolume(family, member) {
     }
 }
 
-function generateData(timestamp, level, family) {
+function generateWaterTankData(timestamp, level, family) {
     const timeseries = {};
 
     for (var i = 0; i < family.members.length; i++) {
@@ -114,6 +136,7 @@ function generateData(timestamp, level, family) {
         eatLunch(timeseries, family, member);
         eatDinner(timeseries, family, member);
         drinkWater(timeseries, family, member);
+        openTap(timeseries, family, member);
 
         performCommonActivity(timeseries, family, member, Activity.Cooking, family.foodIsCookedBtw);
         performCommonActivity(timeseries, family, member, Activity.WashingCloths, family.washClothsBtw);
@@ -125,7 +148,6 @@ function generateData(timestamp, level, family) {
     const sortedTimestamps = Object.keys(timeseries).sort();
 
     const dayInMillis = 24*60*60*1000;
-    const stepSizeInMillis = 60*1000;
 
     var sortedTimeseries = '';
 
@@ -145,8 +167,14 @@ function generateData(timestamp, level, family) {
     return sortedTimeseries;
 }
 
+function generateSumpTankData(timestamp, currentWaterLevel, sumptankProfile) {
+}
+
 module.exports = {
-    synthesizeTimeseries: function(timestamp, currentWaterLevel, familyProfile) {
-        return generateData(timestamp, currentWaterLevel, familyProfile);
+    synthesizeWaterTankTimeseries: function(timestamp, currentWaterLevel, familyProfile) {
+        return generateWaterTankData(timestamp, currentWaterLevel, familyProfile);
+    },
+
+    synthesizeSumpTankTimeseries: function(timestamp, currentWaterLevel, sumpProfile) {
     }
 }
