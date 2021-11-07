@@ -24,19 +24,21 @@ export default function AuthProvider({children}) {
         });
         
         fetch(request).then(response => {
-            response.json().then(body => {
-                if (response.status === 200) {
-                    setUser(body);
-                    cb();
-                } else if (response.status === 401) {
+            if (response.status >= 200 && response.status < 500) {
+                response.json().then(body => {
+                    setUser(response.ok ? body : null);
+                    cb(response.ok ? null : body);
+                }, error => {
+                    console.log(error);
+                }).catch(error => {
+                    console.log(error);
+                });
+            } else {
+                response.text().then(body => {
                     setUser(null);
-                    cb(body);
-                }
-            }, error => {
-                console.log(error);
-            }).catch(error => {
-                console.log(error);
-            });
+                    cb();
+                });
+            }
         });
     }
 

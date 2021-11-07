@@ -67,6 +67,6 @@ app.use((err, req, res, next) => {
 
 setTimeout(() => {
     sessionTTLSetter();
-}, 500);
+}, 1000);
 
 module.exports = app;

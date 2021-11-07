@@ -11,10 +11,16 @@ router.post('/', async function(req, res, next) {
         return;
     }
 
+    var hasErrors = false;
     const tenant = await authorizeTenant(req.body).catch(error => {
+        hasErrors = error ? true : false;
         next(error);
         return;
     });
+
+    if (hasErrors) {
+        return;
+    }
 
     if (tenant) {
         req.session.tenantUuid = tenant.uuid;

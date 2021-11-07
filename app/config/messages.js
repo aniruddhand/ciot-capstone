@@ -36,5 +36,8 @@ module.exports = {
         Unauthorized: getmsg('CERR-INVALID-PINE', 'Invalid pin. Please enter your 4 digit pin and try again.'),
         NotLoggedIn: getmsg('VINFO-NO-SESSION', 'You are not logged in.', StatusCodes.OK),
         LoggedOut: getmsg('OK', 'Successfully logged out.', StatusCodes.OK)
+    },
+    RuntimeMessages: {
+        NoSuchTenant: getmsg('RTERR-NO-SUCH-TENANT', 'There is no user with provided email address.')
     }
 }

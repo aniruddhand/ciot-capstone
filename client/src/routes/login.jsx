@@ -10,12 +10,14 @@ function LoginPage() {
   const auth = useAuth();
 
   const [sessionChecked, setSessionChecked] = useState(false);
+  const [authenticating, setAuthenticating] = useState(false);
 
   let lastLoc = location.state?.from?.pathname || '/';
 
   function doLogin(event) {
     event.preventDefault();
     
+    setAuthenticating(true);
     let formData = new FormData(event.currentTarget);
     
     let email = formData.get('email');
@@ -24,6 +26,9 @@ function LoginPage() {
     auth.signIn(email, pin, (error) => {
       if (!error) {
         navigate(lastLoc, {replace: true});
+      } else {
+        setAuthenticating(false);
+        console.log(error);
       }
     });
   }
@@ -63,14 +68,18 @@ function LoginPage() {
               <form onSubmit={doLogin}>
                 <h3>Sign in</h3>
                 <div className='form-floating mb-3'>
-                  <input name='email' type='email' className='form-control' id='floatingInput' placeholder='name@example.com'></input>
+                  <input name='email' type='email' className='form-control' id='floatingInput' placeholder='name@example.com' required></input>
                   <label htmlFor='floatingInput'>Email address</label>
                 </div>
                 <div className='form-floating'>
-                  <input name='pin' type='password' className='form-control' id='floatingPassword' placeholder='Pin'></input>
+                  <input name='pin' type='password' className='form-control' id='floatingPassword' placeholder='Pin' required></input>
                   <label htmlFor='floatingPassword'>Pin</label>
                 </div>
-                <button type='submit' className='btn btn-primary' style={{marginTop: '10px'}}>Sign in</button>
+                <button type='submit' className='btn btn-primary' style={{marginTop: '10px'}} disabled={authenticating}>
+                  {authenticating && <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>}
+                  {authenticating && ' Sign in'}
+                  {!authenticating && 'Sign in'}
+                </button>
                 <div className='form-text'>Not registered? <a href='/register' className='link-primary'>Register here</a></div>
               </form>
             </div>

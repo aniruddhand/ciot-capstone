@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  ciot-wma:
+    build:
+      context: ./
+      dockerfile: ${DOCKERFILE}
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      SESSIONS_AWS_ACCESS_KEY_ID: "${SESSIONS_ACCESS_KEY_ID}"
+      SESSIONS_AWS_SECRET_ACCESS_KEY: "${SESSIONS_AWS_SECRET_ACCESS_KEY}"
+      AWS_REGION: "${AWS_REGION}"
+    image: local/ciot-wma:latest
+    container_name: ciot-wma.local
+    ports:
+      - "3000:3000"

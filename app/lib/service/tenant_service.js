@@ -1,3 +1,4 @@
+const { RuntimeMessages } = require('../../config/messages');
 const { buildGetTenantCommand, buildPutTenantCommand, buildQueryTenantAuthCommand } = require('../util/tenant_commands');
 const { validateLogin } = require('./validator/login_validator');
 const { validateGetTenant, validatePutTenant } = require('./validator/tenant_validator');
@@ -37,23 +38,29 @@ async function authorizeTenant(tenant) {
                 return;
             }
 
-            if (data && data.Item) {
-                tenant.uuid = data.Item.UUID.S;
-                tenant.fullName = data.Item.FullName.S;
+            if (data) {
+                if (!Object.keys(data).length) {
+                    reject(RuntimeMessages.NoSuchTenant);
+                    return;
 
-                client.query(buildQueryTenantAuthCommand(tenant), (error, data) => {
-                    if (error) {
-                        reject(error);
-                        return;
-                    }
+                } else if (data.Item) {
+                    tenant.uuid = data.Item.UUID.S;
+                    tenant.fullName = data.Item.FullName.S;
 
-                    if (data && data.Items 
-                        && data.Items.length == 1 && data.Items[0].Pin
-                        && data.Items[0].Pin.B.toString() === tenant.pin) {
-                        delete tenant.pin;  
-                        resolve(tenant);
-                    }
-                });
+                    client.query(buildQueryTenantAuthCommand(tenant), (error, data) => {
+                        if (error) {
+                            reject(error);
+                            return;
+                        }
+
+                        if (data && data.Items 
+                            && data.Items.length == 1 && data.Items[0].Pin
+                            && data.Items[0].Pin.B.toString() === tenant.pin) {
+                            delete tenant.pin;  
+                            resolve(tenant);
+                        }
+                    });
+                }
             }
         });
     });

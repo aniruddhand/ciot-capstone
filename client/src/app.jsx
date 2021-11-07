@@ -9,7 +9,9 @@ function App() {
       <div className='container'>
         <div className='row' style={{ marginTop: '10px' }}>
           <div className='col-3'><ContentExplorer/></div>
-          <div className='col'><Outlet /></div>
+          <div className='col'>
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
