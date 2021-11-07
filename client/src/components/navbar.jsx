@@ -19,7 +19,7 @@ export default function Navbar() {
                     <ul className='d-flex navbar-nav me-auto mb-2 mb-lg-0'></ul>
                     <div className='nav-item dropdown d-flex'>
                         <div className='nav-item dropdown'>
-                            <button className='btn btn-secondary btn-sm dropdown-toggle' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
+                            <button className='btn btn-secondary btn-sm dropdown-toggle' id='navbarDropdown' data-bs-toggle='dropdown' aria-expanded='false'>
                                 {auth.user?.fullName}
                             </button>
                             <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
