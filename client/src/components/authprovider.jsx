@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
 
@@ -40,12 +40,8 @@ export default function AuthProvider({children}) {
         });
     }
 
-    let signOut = (user, cb) => {
-        const request = new Request('/api/logout');
-        request.method = 'POST';
-        request.body = {
-            email: user
-        };
+    let signOut = (email, cb) => {
+        const request = new Request('/api/logout', {method: 'POST', body: JSON.stringify({'email': email})});
 
         fetch(request).then(response => {
             setUser(null);

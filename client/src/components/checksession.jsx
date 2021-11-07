@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { Navigate, useLocation } from "react-router";
-import { useAuth } from "./authprovider";
+import { useEffect, useState } from 'react';
+import { Navigate, useLocation } from 'react-router';
+import { useAuth } from './authprovider';
 
 export default function CheckSession({children}) {
     const [sessionChecked, setSessionChecked] = useState(false);
@@ -29,7 +29,7 @@ export default function CheckSession({children}) {
 
     if (!auth.user) {
         if (sessionChecked) {
-            return (<Navigate to="/login" state={{from: location}}></Navigate>);
+            return (<Navigate to='/login' state={{from: location}}></Navigate>);
         } else {
             return <div></div>
         }
