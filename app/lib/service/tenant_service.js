@@ -39,6 +39,7 @@ async function authorizeTenant(tenant) {
 
             if (data && data.Item) {
                 tenant.uuid = data.Item.UUID.S;
+                tenant.fullName = data.Item.FullName.S;
 
                 client.query(buildQueryTenantAuthCommand(tenant), (error, data) => {
                     if (error) {

@@ -11,10 +11,7 @@ function LoginPage() {
 
   const [sessionChecked, setSessionChecked] = useState(false);
 
-  let lastLoc = location.state?.from?.pathname || '';
-  if (lastLoc.endsWith('/login') || lastLoc.endsWith('/logout')) {
-    lastLoc = '';
-  }
+  let lastLoc = location.state?.from?.pathname || '/';
 
   function doLogin(event) {
     event.preventDefault();
@@ -57,8 +54,8 @@ function LoginPage() {
     }
   }, [sessionChecked, auth, navigate]);
 
-  if (sessionChecked) {
-    return(!auth.user && 
+  if (sessionChecked && !auth.user) {
+    return(
       <div className='container vh-100'>
         <div className='row align-items-center vh-100'>
             <div className='col'></div>
