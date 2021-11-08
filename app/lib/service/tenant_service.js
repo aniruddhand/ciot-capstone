@@ -7,7 +7,25 @@ const client = require('../dbclient');
 
 async function getTenant(tenant) {
     validateGetTenant(tenant);
-    return await client.getItem(buildGetTenantCommand(tenant));
+
+    return new Promise((resolve, reject) => {
+        client.getItem(buildGetTenantCommand(tenant), (error, data) => {
+            if (error) {
+                reject(error);
+                return;
+            }
+
+            const item = data.Item;
+            const tenant = {
+                uuid: item.UUID.S,
+                email: item.Email.S,
+                fullName: item.FullName.S,
+                packageUuid: item.PackageUUID.S
+            };
+
+            resolve(tenant);
+        });
+    });
 }
 
 async function createTenant(tenant) {

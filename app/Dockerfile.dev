@@ -4,7 +4,6 @@ WORKDIR /opt/2020ciot-wma
 
 COPY . .
 
-RUN npm install -g nodemon
-RUN rm -f docker-compose.yml && rm -f Dockerfile && npm i
+RUN npm install -g nodemon && npm install
 
 ENTRYPOINT [ "nodemon", "--inspect", "./bin/www" ]

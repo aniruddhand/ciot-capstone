@@ -3,8 +3,8 @@ const client = require('./dbclient');
 module.exports = function(options) {
     var ttlChecked = false;
 
-    async function checkIfTenantsSessionsExists() {
-        console.log('Checking if TenantsSessions table exists to enable TTL ... ');
+    async function checkIfTenantsSessionsExists(count) {
+        console.log('Checking if TenantsSessions table exists to enable TTL ...');
 
         return new Promise((resolve, reject) => {
             client.describeTable({
@@ -13,11 +13,15 @@ module.exports = function(options) {
                 if (error || info.Table.TableStatus === 'CREATING') {
                     console.log('Table is still getting created, will try again after 5 seconds ... ');
 
-                    setTimeout(() => {
-                        checkIfTenantsSessionsExists().then(() => { resolve() }, () => {
-                            checkIfTenantsSessionsExists().then(() => { resolve() }, () => { reject() });                        
-                        }).catch(() => { reject() });
-                    }, 5000);
+                    if (count < 5) {
+                        setTimeout(() => {
+                            checkIfTenantsSessionsExists(++count).then(() => { resolve() }, () => {
+                                checkIfTenantsSessionsExists().then(() => { resolve() }, () => { reject() });                        
+                            }).catch(() => { reject() });
+                        }, 5000);
+                    } else {
+                        reject();
+                    }
                 } else if (info.Table.TableStatus === 'ACTIVE') {
                     resolve();
                 } else {
@@ -31,7 +35,7 @@ module.exports = function(options) {
         if (ttlChecked) return;
 
         let successful = true;
-        await checkIfTenantsSessionsExists().catch((error) => { console.log(error); successful = false });
+        await checkIfTenantsSessionsExists(0).catch((error) => { console.log(error); successful = false });
         
         if (!successful) {
             return;

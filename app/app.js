@@ -15,6 +15,7 @@ var loginRouter = require('./routes/login');
 var logoutRouter = require('./routes/logout');
 // var summaryRouter = require('./routes/summary');
 var statusRouter = require('./routes/status');
+
 // var alertsRouter = require('./routes/alerts');
 // var buildingsRouter = require('./routes/buildings');
 // var buildingRouter = require('./routes/building');

@@ -9,6 +9,8 @@ services:
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
       SESSIONS_AWS_ACCESS_KEY_ID: "${SESSIONS_ACCESS_KEY_ID}"
       SESSIONS_AWS_SECRET_ACCESS_KEY: "${SESSIONS_AWS_SECRET_ACCESS_KEY}"
+      MQTT_BROKER_ENDPOINT: "${MQTT_BROKER_ENDPOINT}"
+
       AWS_REGION: "${AWS_REGION}"
     image: local/ciot-wma:latest
     container_name: ciot-wma.local

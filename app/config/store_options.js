@@ -2,8 +2,8 @@ var sessionsStoreConfig = {
     table: 'TenantsSessions',
     AWSConfigJSON: {
         region: process.env.AWS_REGION,
-        accessKeyId: process.env.SESSIONS_AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.SESSIONS_AWS_SECRET_ACCESS_KEY        
+        accessKeyId: process.env.AWS_ACCESS_KEY,
+        secretAccessKey: process.env.AWS_SECRET_KEY        
     },
     specialKeys: [
         {
@@ -11,10 +11,6 @@ var sessionsStoreConfig = {
             type: 'S'
         }
     ]
-}
-
-if (process.env.ENV === 'dev') {
-    sessionsStoreConfig.AWSConfigJSON.endpoint = process.env.ENDPOINT;
 }
 
 module.exports = sessionsStoreConfig;

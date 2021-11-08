@@ -6,7 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.39.0",
+    "aws-crt": "^1.10.2",
+    "aws-sdk": "^2.1023.0",
     "connect-dynamodb": "^2.0.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
