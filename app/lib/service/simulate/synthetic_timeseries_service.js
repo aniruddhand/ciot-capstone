@@ -161,7 +161,7 @@ function generateWaterTankData(timestamp, level, family) {
         }
 
         const date = new Date(i);
-        sortedTimeseries += `${date.getHours()}:${date.getMinutes()}, ` + Math.ceil(currentLevel) + '\n';
+        sortedTimeseries += `${i}, ` + Math.ceil(currentLevel) + '\n';
     }
 
     return sortedTimeseries;
