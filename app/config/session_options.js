@@ -1,7 +1,7 @@
 var sessionOptions = {
     cookie: {
         httpOnly: true,
-        maxAge: 60000
+        maxAge: 350000
     },
     name: 'TenantSessionCookie',
     saveUninitialized: false,

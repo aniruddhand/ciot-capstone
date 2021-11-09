@@ -34,7 +34,7 @@ export default function ContentExplorer() {
 			</div>
 			<div className='card-body'>
 				<ul className='list-group list-group-flush'>
-					<Link to='/schedules/current' className={getClassName('/schedules/current')}>Today's Schedule</Link>
+					<Link to='/schedules/current' className={getClassName('/schedules/current')}>Water Pump</Link>
 				</ul>
 			</div>
 			<div className='card-header' style={{borderTop: '1px solid rgba(0,0,0,.125)'}}>
