@@ -39,6 +39,7 @@ module.exports = {
     },
     RuntimeMessages: {
         NoSuchTenant: getmsg('RTERR-NO-SUCH-TENANT', 'There is no user with provided email address.'),
-        ErrorFetchingFleetTimeseries: getmsg('RTERR-TS-FETCH-FAILED', 'Could not fetch fleet timeseries.', StatusCodes.INTERNAL_SERVER_ERROR)
+        ErrorFetchingFleetTimeseries: getmsg('RTERR-TS-FETCH-FAILED', 'Could not fetch fleet timeseries.', StatusCodes.INTERNAL_SERVER_ERROR),
+        ErrorFetchingAlertItems: getmsg('RTERR-ALERTS-FETCH-FAILED', 'Could not fetch alerts.', StatusCodes.INTERNAL_SERVER_ERROR)
     }
 }

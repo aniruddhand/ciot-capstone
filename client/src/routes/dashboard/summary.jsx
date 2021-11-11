@@ -86,7 +86,7 @@ export default function SummaryPage() {
                     </div>
                 </div>
             }
-            {status && status.pump &&
+            {status && status.pump && false &&
                 <div className="row">
                     <div className="col-8">
                         <div className='card mb-3 top-m-5'>

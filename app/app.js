@@ -16,7 +16,7 @@ var logoutRouter = require('./routes/logout');
 // var summaryRouter = require('./routes/summary');
 var statusRouter = require('./routes/status');
 
-// var alertsRouter = require('./routes/alerts');
+var alertsRouter = require('./routes/alerts');
 // var buildingsRouter = require('./routes/buildings');
 // var buildingRouter = require('./routes/building');
 // var apartmentsRouter = require('./routes/apartments');
@@ -37,7 +37,7 @@ app.use(session({ ...sessionConfig, store: new DynamoDBStore(sessionsStoreConfig
 app.use(sessionValidator());
 
 // app.use('/', summaryRouter);
-// app.use('/alerts', alertsRouter);
+app.use('/api/alerts', alertsRouter);
 // app.use('/buildings', buildingsRouter);
 // app.use('/buildings/{:bldid}', buildingRouter);
 // app.use('/buildings/{:bldid}/apartments', apartmentsRouter);
