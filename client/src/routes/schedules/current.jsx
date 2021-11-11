@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ago from 's-ago';
 
-function epochToDate(epochSinceMidnight) {
-  let today = Date.now();
-  let todayAt00InMillis = new Date(today.getFullYear(), today.getMonth()+1, today.getDay()+1).getMilliseconds();
+// function epochToDate(epochSinceMidnight) {
+//   let today = Date.now();
+//   let todayAt00InMillis = new Date(today.getFullYear(), today.getMonth()+1, today.getDay()+1).getMilliseconds();
 
-  return new Date(todayAt00InMillis + epochSinceMidnight);
-}
+//   return new Date(todayAt00InMillis + epochSinceMidnight);
+// }
 
-function getFormattedDate(date) {
-  const day = date.getDay()+1;
-  const month = date.getMonth()+1;
-  const year = date.getFullYear();
+// function getFormattedDate(date) {
+//   const day = date.getDay()+1;
+//   const month = date.getMonth()+1;
+//   const year = date.getFullYear();
 
-  return  day + '/' + month + '/' + year;
-}
+//   return  day + '/' + month + '/' + year;
+// }
 
 export default function CurrentSchedule() {
   const [pumpSchedule] = useState({

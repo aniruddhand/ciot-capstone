@@ -38,6 +38,7 @@ module.exports = {
         LoggedOut: getmsg('OK', 'Successfully logged out.', StatusCodes.OK)
     },
     RuntimeMessages: {
-        NoSuchTenant: getmsg('RTERR-NO-SUCH-TENANT', 'There is no user with provided email address.')
+        NoSuchTenant: getmsg('RTERR-NO-SUCH-TENANT', 'There is no user with provided email address.'),
+        ErrorFetchingFleetTimeseries: getmsg('RTERR-TS-FETCH-FAILED', 'Could not fetch fleet timeseries.', StatusCodes.INTERNAL_SERVER_ERROR)
     }
 }

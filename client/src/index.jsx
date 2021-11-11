@@ -10,6 +10,7 @@ import CheckSession from './components/checksession';
 import SummaryPage from './routes/dashboard/summary';
 import UsagePage from './routes/dashboard/usage';
 import CurrentSchedule from './routes/schedules/current';
+import FleetHub from './routes/status/fleet';
 import ActiveNotifications from './routes/alerts/active';
 
 ReactDOM.render(
@@ -22,6 +23,7 @@ ReactDOM.render(
                 <Route path='/dashboard/summary' element={<CheckSession><SummaryPage/></CheckSession>}/>
                 <Route path='/dashboard/usage' element={<CheckSession><UsagePage/></CheckSession>}/>
                 <Route path='/schedules/current' element={<CheckSession><CurrentSchedule/></CheckSession>}/>
+                <Route path='/status/fleet' element={<CheckSession><FleetHub/></CheckSession>}/>
                 <Route path='/alerts/active' element={<CheckSession><ActiveNotifications/></CheckSession>}/>
               </Route>
           </Routes>

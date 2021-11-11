@@ -2,6 +2,8 @@ const { ConsumptionBracket, HousholdEconomicSection } = require('../models/times
 
 var express = require('express');
 const { synthesizeWaterTankTimeseries: synthesizeTimeseries } = require('../lib/service/simulate/synthetic_timeseries_service');
+const { getFleetTimeseries } = require('../lib/service/usage/timeseries_service');
+const { StatusCodes } = require('http-status-codes');
 var router = express.Router();
 
 // Sample profile
@@ -47,6 +49,19 @@ router.get('/synthetic', function(req, res, next) {
     res.setHeader('Content-disposition', 'attachment; filename=data.csv');
     res.set('Content-Type', 'text/csv');
     res.send(synthesizeTimeseries(1635964200000, req.query.capacity ? req.query.capacity : 2000, familyProfile));
+});
+
+router.post('/usage', function(req, res, next) {
+    let wlGWThingName = req.body.wlGWThingName;
+    let slGWThingName = req.body.slGWThingName;
+    let fromTimestamp = req.body.fromTimestamp;
+    let toTimestamp = req.body.toTimestamp;
+
+    getFleetTimeseries(wlGWThingName, slGWThingName, fromTimestamp, toTimestamp).then(timeseries => {
+        res.json(timeseries);
+    }, error => {
+        next(error);
+    });
 });
 
 module.exports = router;

@@ -38,13 +38,18 @@ async function getFleetStatus(tenant) {
               }
   
               if (shadow.payload) {
-                lastMessage = JSON.parse(shadow.payload).state.delta;
+                lastMessage = JSON.parse(shadow.payload).state.delta || {};
+                lastMessage.thingName = thingName;
               }
 
-              if (thingName.endsWith('WLGW')) {
+              if (thingName.endsWith('_WLGW')) {
                 fleetStatus.wlgw = lastMessage;
-              } else {
+
+              } else if (thingName.endsWith('_SLGW')) {
                 fleetStatus.slgw = lastMessage;
+
+              } else if (thingName.endsWith('_Pump')) {
+                fleetStatus.pump = lastMessage;
               }
 
               resolve();
