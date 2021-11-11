@@ -1,6 +1,6 @@
 function buildWLGWUsageTimeseriesCommand(thingName, fromTimestamp, toTimestamp) {
   const cmdPayload = {
-    'Statement': `SELECT "timestamp", "volume" FROM "WLGWTimeseries" WHERE "thingName" = '${thingName}' AND "timestamp" BETWEEN ${fromTimestamp} AND ${toTimestamp} ORDER BY "timestamp" ASC`
+    'Statement': `SELECT "timestamp", "volume" FROM "WLGWTimeseries" WHERE "thingName" = '${thingName}' ORDER BY "timestamp" ASC`
  }
 
   return cmdPayload;
@@ -8,7 +8,7 @@ function buildWLGWUsageTimeseriesCommand(thingName, fromTimestamp, toTimestamp) 
 
 function buildSLGWUsageTimeseriesCommand(thingName, fromTimestamp, toTimestamp) {
   const cmdPayload = {
-    'Statement': `SELECT "timestamp", "volume" FROM "SLGWTimeseries" WHERE "thingName" = '${thingName}' AND "timestamp" BETWEEN ${fromTimestamp} AND ${toTimestamp} ORDER BY "timestamp" ASC`
+    'Statement': `SELECT "timestamp", "volume" FROM "SLGWTimeseries" WHERE "thingName" = '${thingName}' ORDER BY "timestamp" ASC`
  }
 
   return cmdPayload;

@@ -35,5 +35,15 @@ module.exports = {
         }
     
         return true;
+    },
+
+    getTodaysEpochRange: () => {
+        const now = Date.now();
+        const date = new Date(now);
+
+        const fromTimestamp = (now - date.getHours()*60*60*1000 - date.getMinutes()*60*1000 - date.getSeconds()*1000);
+        const toTimestamp = (fromTimestamp + 23*60*60*1000 + 59*60*1000 + 59*1000);
+
+        return [fromTimestamp, toTimestamp];
     }
 };

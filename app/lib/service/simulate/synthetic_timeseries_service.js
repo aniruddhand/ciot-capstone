@@ -121,7 +121,7 @@ function fixTodaysConsumptionVolume(family, member) {
     }
 }
 
-function generateWaterTankData(timestamp, level, family) {
+function generateWaterTankData(thingName, timestamp, level, family) {
     const timeseries = {};
 
     for (var i = 0; i < family.members.length; i++) {
@@ -149,7 +149,7 @@ function generateWaterTankData(timestamp, level, family) {
 
     const dayInMillis = 24*60*60*1000;
 
-    var sortedTimeseries = '';
+    var sortedTimeseries = [];
 
     for (var i = timestamp; i < timestamp + dayInMillis; i += stepSizeInMillis) {
         for (var j = 0; j < sortedTimestamps.length; j++) {
@@ -161,7 +161,7 @@ function generateWaterTankData(timestamp, level, family) {
         }
 
         const date = new Date(i);
-        sortedTimeseries += `${i}, ` + Math.ceil(currentLevel) + '\n';
+        sortedTimeseries.push({'thingName': thingName, 'timestamp': i,  'volume': Math.ceil(currentLevel)});
     }
 
     return sortedTimeseries;
@@ -171,8 +171,8 @@ function generateSumpTankData(timestamp, currentWaterLevel, sumptankProfile) {
 }
 
 module.exports = {
-    synthesizeWaterTankTimeseries: function(timestamp, currentWaterLevel, familyProfile) {
-        return generateWaterTankData(timestamp, currentWaterLevel, familyProfile);
+    synthesizeWaterTankTimeseries: function(thingName, timestamp, currentWaterLevel, familyProfile) {
+        return generateWaterTankData(thingName, timestamp, currentWaterLevel, familyProfile);
     },
 
     synthesizeSumpTankTimeseries: function(timestamp, currentWaterLevel, sumpProfile) {

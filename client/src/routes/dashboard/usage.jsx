@@ -33,15 +33,26 @@ export default function UsagePage() {
     fetch('/api/timeseries/usage', {method: 'POST', body: JSON.stringify(body), headers: {'Content-Type': 'application/json'}})
       .then(response => {
         if (response.status === 200) {
+          const actualSeries = {wlgw: []};
+
           response.json().then(timeseries => {
             if (timeseries.wlgw && timeseries.wlgw.length) {
+              let lastVolume = 0;
+
               timeseries.wlgw.forEach(data => {
+                if (data.volume === lastVolume) {
+                  return;
+                }
+
                 const epoch = new Date(data.timestamp);
                 data.datetime = epoch.getHours() + ":" + epoch.getMinutes() + ' ' + (epoch.getHours() < 12 ? 'am' : 'pm')
+
+                actualSeries.wlgw.push(data);
+                lastVolume = data.volume;
               })
             }
-            setFleetTimeseries(timeseries);
-            sessionStorage.setItem('fleetUsage', JSON.stringify(timeseries));
+            setFleetTimeseries(actualSeries);
+            sessionStorage.setItem('fleetUsage', JSON.stringify(actualSeries));
           });
         }
       });
@@ -49,8 +60,8 @@ export default function UsagePage() {
 
   return (
     <div>
-      <h3>Usage</h3>
-      <p className='fw-normal'>This page shows water levels in today's time period.</p>
+      <h3>Today's Usage</h3>
+      <p className='fw-normal'>This page shows overhead tank's water levels in today's time period.</p>
       {!fleetTimeseries &&
         <div className='d-flex justify-content-center'>
             <div className='spinner-border m-5' role='status' style={{ width: '3rem', height: '3rem' }}></div>
@@ -59,7 +70,7 @@ export default function UsagePage() {
       <LineChart width={900} height={400} data={fleetTimeseries.wlgw}>
         <Line type="monotone" dataKey="volume" stroke="#ff7300" />
         <CartesianGrid stroke="#ccc" strokeDasharray="5 5"/>
-        <XAxis dataKey="datetime" />
+        <XAxis dataKey="datetime"/>
         <YAxis />
         <Tooltip />
       </LineChart>
