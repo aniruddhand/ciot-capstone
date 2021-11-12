@@ -23,7 +23,7 @@ function takeBath(timeseries, family, member) {
     const todaysConsumption = ((member.pcpd * bathingPercentage)/100);
 
     var activityRange = member.getsReadyBtw ? member.getsReadyBtw : family.getsReadyBtw;
-    const todaysActivityTime = getRandomIntInclusive(activityRange[0], activityRange[1]);
+    const todaysActivityTime = getRandomIntInclusive(strToMillis(family, activityRange[0]), strToMillis(family, activityRange[1]));
 
     timeseries[todaysActivityTime] = todaysConsumption;
 }
@@ -33,7 +33,7 @@ function eatBreakfast(timeseries, family, member) {
     const todaysConsumption = ((member.pcpd * (activityPercentage/7)/100));
 
     var activityRange = member.breaksfastsBtw ? member.breaksfastsBtw : family.breaksfastsBtw;
-    const todaysActivityTime = getRandomIntInclusive(activityRange[0], activityRange[1]);
+    const todaysActivityTime = getRandomIntInclusive(strToMillis(family, activityRange[0]), strToMillis(family, activityRange[1]));
 
     timeseries[todaysActivityTime] = todaysConsumption;
 }
@@ -43,7 +43,7 @@ function eatLunch(timeseries, family, member) {
     const todaysConsumption = ((member.pcpd * (activityPercentage/7)/100));
 
     var activityRange = member.breaksfastsBtw ? member.breaksfastsBtw : family.breaksfastsBtw;
-    const todaysActivityTime = getRandomIntInclusive(activityRange[0], activityRange[1]);
+    const todaysActivityTime = getRandomIntInclusive(strToMillis(family, activityRange[0]), strToMillis(family, activityRange[1]));
 
     timeseries[todaysActivityTime] = todaysConsumption;
 }
@@ -53,7 +53,7 @@ function eatDinner(timeseries, family, member) {
     const todaysConsumption = ((member.pcpd * (activityPercentage/7)/100));
 
     var activityRange = member.breaksfastsBtw ? member.breaksfastsBtw : family.breaksfastsBtw;
-    const todaysActivityTime = getRandomIntInclusive(activityRange[0], activityRange[1]);
+    const todaysActivityTime = getRandomIntInclusive(strToMillis(family, activityRange[0]), strToMillis(family, activityRange[1]));
 
     timeseries[todaysActivityTime] = todaysConsumption;
 }
@@ -78,8 +78,8 @@ function openTap(timeseries, family, member) {
         return;
     }
 
-    for (var i = member.opensTapBtw[0]; i <= member.opensTapBtw[1]; i += stepSizeInMillis) {
-        timeseries[i] = 4;
+    for (var i = strToMillis(family, member.opensTapBtw[0]); i <= strToMillis(family, member.opensTapBtw[1]); i += stepSizeInMillis) {
+        timeseries[i] = getRandomIntInclusive(4, 5);
     }
 }
 
@@ -96,7 +96,7 @@ function performCommonActivity(timeseries, family, member, activity, activityTim
     const perActivityConsumption = (((member.pcpd * activityPercentage)/100)/ranges.length);
 
     ranges.forEach(range => {
-        const timeWithinARange = getRandomIntInclusive(range[0], range[1]);
+        const timeWithinARange = getRandomIntInclusive(strToMillis(family, range[0]), strToMillis(family, range[1]));
         timeseries[timeWithinARange] = perActivityConsumption;    
     });
 }
@@ -105,8 +105,8 @@ function fixTodaysWakeupAndSleepTime(family, member) {
     var dayStartRange = member.dayStartsBtw ? member.dayStartsBtw : family.dayStartsBtw;
     var dayEndRange = member.dayEndsBtw ? member.dayEndsBtw : family.dayEndsBtw;
 
-    member.dayStartTime = getRandomIntInclusive(dayStartRange[0], dayStartRange[1]);
-    member.dayEndTime = getRandomIntInclusive(dayEndRange[0], dayEndRange[1]);
+    member.dayStartTime = getRandomIntInclusive(strToMillis(family, dayStartRange[0]), strToMillis(family, dayStartRange[1]));
+    member.dayEndTime = getRandomIntInclusive(strToMillis(family, dayEndRange[0]), strToMillis(family, dayEndRange[1]));
 }
 
 function fixTodaysConsumptionVolume(family, member) {
@@ -121,8 +121,16 @@ function fixTodaysConsumptionVolume(family, member) {
     }
 }
 
+function strToMillis(family, timeStr) {
+    var [hours, minutes] = timeStr.split(':');
+    
+    return family.today + Number.parseInt(hours)*60*60*1000 + Number.parseInt(minutes)*60*1000;
+}
+
 function generateWaterTankData(thingName, timestamp, level, family) {
     const timeseries = {};
+
+    family.today = timestamp;
 
     for (var i = 0; i < family.members.length; i++) {
         const member = family.members[i];

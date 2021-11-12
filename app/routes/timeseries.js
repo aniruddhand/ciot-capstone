@@ -9,39 +9,56 @@ var router = express.Router();
 
 // Sample profile
 const familyProfile = {
-    dayStartsBtw: [1635984000000, 1635987600000],
-    getsReadyBtw: [1635991200000, 1636000200000],
-    foodIsCookedBtw: [[1635991200000, 1635994800000], [1636000200000, 1636007400000]],
-    breaksfastsBtw: [1635996600000, 1635998400000],
-    lunchBtw: [1635969600000, 1635973200000],
-    houseIsCleanedBtw: [1635994800000, 1636000200000],
-    washClothsBtw: [1635991200000, 1636000200000],
-    utensilsAreWashedBtw: [[1636021800000, 1636024500000]],
-    dinesBtw: [1635994800000, 1635998400000],
-    dayEndsBtw: [1636045200000, 1636003800000],
+    dayStartsBtw: ['6:30', '7:30'],
+    dayEndsBtw: ['22:00', '22:30'],
+    foodIsCookedBtw: [['7:30', '9:00'], ['11:00', '12:30']],
+    lunchBtw: ['13:30', '14:15'],
+    houseIsCleanedBtw: ['08:00', '11:00'],
+    washClothsBtw: ['08:00', '10:00'],
+    utensilsAreWashedBtw: [['16:00', '16:30']],
+    dinesBtw: ['20:15', '20:45'],
     members: [{
         age: 89,
+        getsReadyBtw: ['8:00', '8:30'],
+        dayEndsBtw: ['22:30', '23:00'],
+        breaksfastsBtw: ['9:00', '9:15'],
         paConsumptionBracket: ConsumptionBracket.Btw100To135
     }, {
         age: 79,
+        dayStartsBtw: ['5:30', '6:0'],
+        getsReadyBtw: ['9:0', '9:45'],
+        breaksfastsBtw: ['09:45', '10:00'],
         paConsumptionBracket: ConsumptionBracket.Btw75To100
     }, {
         age: 65,
+        getsReadyBtw: ['8:45', '9:15'],
+        breaksfastsBtw: ['10:00', '10:30'],
         paConsumptionBracket: ConsumptionBracket.Btw75To100
     }, {
         age: 41,
+        getsReadyBtw: ['8:00', '8:30'],
+        breaksfastsBtw: ['9:30', '9:45'],
+        dayEndsBtw: ['22:45', '23:00'],
         paConsumptionBracket: ConsumptionBracket.Btw75To100
     }, { 
         age: 39,
+        getsReadyBtw: ['9:00', '9:45'],
+        breaksfastsBtw: ['09:45', '10:00'],
+        dayEndsBtw: ['10:45', '11:30'],
         paConsumptionBracket: ConsumptionBracket.Btw75To100
     }, {
         age: 13,
+        getsReadyBtw: ['8:00', '8:30'],
+        breaksfastsBtw: ['09:00', '09:45'],
         paConsumptionBracket: ConsumptionBracket.Btw100To135
     }, {
         age: 8,
-        dayStartsBtw: [1635989400000, 1635993000000],
+        dayStartsBtw: ['7:00', '7:30'],
+        getsReadyBtw: ['10:00', '10:30'],
+        breaksfastsBtw: ['10:45', '10:55'],
+        dayEndsBtw: ['22:45', '23:00'],
         paConsumptionBracket: ConsumptionBracket.Btw100To135,
-        opensTapBtw: [1636021800000, 1636022400000]
+        opensTapBtw: ['23:00', '23:45']
     }],
     economicSection:HousholdEconomicSection.SECA
 }
