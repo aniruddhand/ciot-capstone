@@ -5,7 +5,7 @@ import ago from 's-ago';
 
 export default function SummaryPage() {
     const auth = useAuth();
-    const [status, setStatus] = useState();
+    const [status, setStatus] = useState(undefined);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -33,6 +33,11 @@ export default function SummaryPage() {
         });
     }, [status, auth, navigate]);
 
+    function refreshStatus() {
+        sessionStorage.removeItem('fleetStatus');
+        setStatus(null);
+    }
+
     return (
         <div>
             <h3>Summary</h3>
@@ -45,6 +50,9 @@ export default function SummaryPage() {
             {status &&
                 <div className="row">
                     <div className="col-8">
+                        <p className='d-flex justify-content-end'>
+                            <button type="button" className="btn btn-outline-secondary" onClick={refreshStatus}>Refresh</button>
+                        </p>
                         <div className='card mb-3 top-m-5'>
                             <div className='row g-0 h-100'>
                                 <div className='col-md-4 bg-secondary'>

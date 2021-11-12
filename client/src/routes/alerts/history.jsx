@@ -18,9 +18,9 @@ function getAlertCard(alert) {
     <div className="col-8">
       <div className='card mb-3 top-m-5'>
         <div className='row g-0 h-100'>
-          <div className='col-md-4 bg-warning'>
+          <div className='col-md-4 bg-secondary'>
             <div className='img-fluid rounded-start d-flex align-items-center justify-content-center'>
-              <i className='bi bi-droplet-half' style={{ fontSize: '07rem', color: 'red' }}></i>
+              <i className='bi bi-droplet-half' style={{ fontSize: '07rem', color: 'cornflowerblue' }}></i>
             </div>
           </div>
           <div className='col-md-8'>
@@ -50,7 +50,7 @@ function enrichWithHumanReadableDate(alert) {
   alert.data.timeRange = `${fromHours}:${fromMinutes} ${fromAm} to ${toHours}:${toMinutes} ${toAm}`;
 }
 
-export default function ActiveNotifications() {
+export default function NotificationsHistory() {
   const [alerts, setAlerts] = useState({wlgw: [], slgw: [], fetching: true});
   const [fetched, setFetched] = useState(false);
 
@@ -64,7 +64,7 @@ export default function ActiveNotifications() {
     const wlgwThingName = encodeURI(fleetStatus.wlgw.thingName);
     const slgwThingName = encodeURI(fleetStatus.slgw.thingName);
 
-    fetch(`/api/alerts/active?thingNames=${wlgwThingName}&thingNames=${slgwThingName}`)
+    fetch(`/api/alerts/history?thingNames=${wlgwThingName}&thingNames=${slgwThingName}`)
       .then(response => {
         if (response.status === 200) {
           setFetched(true);
@@ -83,21 +83,18 @@ export default function ActiveNotifications() {
             setAlerts(alerts);
           });
         }
-      }, error => {
-        console.log(error);
       });
 
   }, [alerts, fetched]);
 
   return (
     <div>
-      <h3>Today's Alerts</h3>
+    <h3>Alerts History</h3>
       {alerts.fetching &&
         <div className='d-flex justify-content-center'>
             <div className='spinner-border m-5' role='status' style={{ width: '3rem', height: '3rem' }}></div>
         </div>}
-      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no active alerts!</p>}
-      {(alerts.wlgw.length > 0 || alerts.slgw.length > 0) && <p className='fw-normal'>There are some alerts which need to be addressed.</p>}
+      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no alerts!</p>}
       {alerts.wlgw.length > 0 && <p className='fw-bold'>For Overhead Water Tank</p>}
       {alerts.wlgw?.length > 0 &&
         alerts.wlgw.map((alert, index) => {

@@ -1,11 +1,20 @@
 var express = require('express');
-const { getFleetAlerts } = require('../lib/service/fleet/alerts');
+const { getFleetActiveAlerts, getFleetAlertsHistory } = require('../lib/service/fleet/alerts');
 var router = express.Router();
 
 /* GET alerts data. */
-router.get('/', function(req, res, next) {
-  const thingName = req.query.wlGWThingName;
-  getFleetAlerts(thingName).then(alerts => {
+router.get('/active', function(req, res, next) {
+  const thingNames = req.query.thingNames;
+  getFleetActiveAlerts(thingNames).then(alerts => {
+    res.json(alerts);
+  }, error => {
+    next(error);
+  })
+});
+
+router.get('/history', function(req, res, next) {
+  const thingNames = req.query.thingNames;
+  getFleetAlertsHistory(thingNames).then(alerts => {
     res.json(alerts);
   }, error => {
     next(error);
