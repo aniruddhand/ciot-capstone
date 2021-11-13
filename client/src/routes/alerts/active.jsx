@@ -4,7 +4,7 @@ function getAlertMessage(alert) {
   switch (alert.type) {
     case 'Leakage':
       return ['Water flowed continuously!',
-                  <span>Water was continuously flowing at the rate of <span className='fw-bold'>{alert.data.mean} ltr</span>
+                  <span>Water was continuously flowing at a rate of <span className='fw-bold'>{Math.round(alert.data.mean)} ltr</span>
                   &nbsp;per minute between <span className='fw-bold'>{alert.data.timeRange}</span> on 
                   &nbsp;{new Date(alert.timestamp).toDateString()}</span>]
     default:
@@ -40,11 +40,11 @@ function enrichWithHumanReadableDate(alert) {
   const toDate = new Date(alert.data.toTimestamp);
 
   const fromHours = fromDate.getHours();
-  const fromMinutes = fromDate.getMinutes();
+  const fromMinutes = fromDate.getMinutes() < 10 ? ('0' + fromDate.getMinutes()) : fromDate.getMinutes();
   const fromAm = (fromHours > 12 ? ' pm' : ' am');
 
   const toHours = toDate.getHours();
-  const toMinutes = toDate.getMinutes();
+  const toMinutes = toDate.getMinutes() < 10 ? ('0' + toDate.getMinutes()) : toDate.getMinutes();
   const toAm = (toHours > 12 ? ' pm' : ' am');
 
   alert.data.timeRange = `${fromHours}:${fromMinutes} ${fromAm} to ${toHours}:${toMinutes} ${toAm}`;
@@ -96,7 +96,7 @@ export default function ActiveNotifications() {
         <div className='d-flex justify-content-center'>
             <div className='spinner-border m-5' role='status' style={{ width: '3rem', height: '3rem' }}></div>
         </div>}
-      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no active alerts!</p>}
+      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no active alerts.</p>}
       {(alerts.wlgw.length > 0 || alerts.slgw.length > 0) && <p className='fw-normal'>There are some alerts which need to be addressed.</p>}
       {alerts.wlgw.length > 0 && <p className='fw-bold'>For Overhead Water Tank</p>}
       {alerts.wlgw?.length > 0 &&

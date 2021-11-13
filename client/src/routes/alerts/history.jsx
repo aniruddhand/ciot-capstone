@@ -94,7 +94,7 @@ export default function NotificationsHistory() {
         <div className='d-flex justify-content-center'>
             <div className='spinner-border m-5' role='status' style={{ width: '3rem', height: '3rem' }}></div>
         </div>}
-      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no alerts!</p>}
+      {!alerts.fetching && alerts.wlgw.length === 0 && alerts.slgw.length === 0 && <p className='fw-normal'>There are no alerts.</p>}
       {alerts.wlgw.length > 0 && <p className='fw-bold'>For Overhead Water Tank</p>}
       {alerts.wlgw?.length > 0 &&
         alerts.wlgw.map((alert, index) => {
