@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "aws-crt": "^1.10.2",
+    "aws-iot-device-sdk": "^2.2.11",
     "aws-sdk": "^2.1023.0",
     "connect-dynamodb": "^2.0.4",
     "cookie-parser": "~1.4.4",

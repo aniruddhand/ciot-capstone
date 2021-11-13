@@ -1,4 +1,12 @@
-// const emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)\|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+function getDaysRange(timestamp) {
+    const date = new Date(timestamp);
+
+    const fromTimestamp = (timestamp - date.getHours()*60*60*1000 - date.getMinutes()*60*1000 - date.getSeconds()*1000);
+    const toTimestamp = (fromTimestamp + 23*60*60*1000 + 59*60*1000 + 59*1000);
+
+    return [fromTimestamp, toTimestamp];
+}
+
 
 module.exports = {
     matchesEmailPattern: (email) => {
@@ -37,13 +45,11 @@ module.exports = {
         return true;
     },
 
+    getEpochRange: (timestamp) => {
+        return getDaysRange(timestamp);
+    },
+
     getTodaysEpochRange: () => {
-        const now = Date.now();
-        const date = new Date(now);
-
-        const fromTimestamp = (now - date.getHours()*60*60*1000 - date.getMinutes()*60*1000 - date.getSeconds()*1000);
-        const toTimestamp = (fromTimestamp + 23*60*60*1000 + 59*60*1000 + 59*1000);
-
-        return [fromTimestamp, toTimestamp];
+        return getDaysRange(Date.now());
     }
 };

@@ -27,7 +27,7 @@ function getAlertMessage(timestamp) {
   if (late || tooLate) {
     return (
       <p className='card-text'>
-        The overhead water tank is <span className='fw-bold'>OFFLINE</span><br/>
+        The overhead water tank is <span className='fw-bold'>OFFLINE</span><br/><br/>
         {late && !tooLate && 'It has not communicated since last 10 minutes.'}
         {tooLate && 'It has has been more than 10 minutes since it last communicated.'}
       </p>)

@@ -58,10 +58,19 @@ export default function UsagePage() {
       });
   }, [fleetTimeseries]);
 
+  function refreshStatus() {
+    sessionStorage.removeItem('fleetUsage');
+    setFleetTimeseries(null);
+  }
+
+
   return (
     <div>
       <h3>Today's Usage</h3>
       <p className='fw-normal'>This page shows overhead tank's water levels in today's time period.</p>
+      <p className='d-flex justify-content-end'>
+          <button type="button" className="btn btn-outline-secondary" onClick={refreshStatus}>Refresh</button>
+      </p>
       {!fleetTimeseries &&
         <div className='d-flex justify-content-center'>
             <div className='spinner-border m-5' role='status' style={{ width: '3rem', height: '3rem' }}></div>

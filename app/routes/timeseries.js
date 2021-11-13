@@ -4,7 +4,7 @@ var express = require('express');
 const { synthesizeWaterTankTimeseries: synthesizeTimeseries } = require('../lib/service/simulate/synthetic_timeseries_service');
 const { getFleetTimeseries } = require('../lib/service/usage/timeseries_service');
 const { StatusCodes } = require('http-status-codes');
-const { getTodaysEpochRange } = require('../lib/util/common-utils');
+const { getTodaysEpochRange, getEpochRange } = require('../lib/util/common-utils');
 var router = express.Router();
 
 // Sample profile
@@ -64,13 +64,18 @@ const familyProfile = {
 }
 
 router.get('/synthetic', function(req, res, next) {
-    const [begin] = getTodaysEpochRange();
+    const [begin] = req.query.timestamp ?
+                        getEpochRange(Number.parseInt(req.query.timestamp)) : getTodaysEpochRange();
 
     res.setHeader('Content-disposition', 'attachment; filename=data.json');
     res.set('Content-Type', 'application/json');
     res.send(synthesizeTimeseries('Thing_85a9c59a-c389-4d2c-9cbc-7a5b430eb5f2_WLGW',
-                1635964200000,
+                begin,
                 req.query.capacity ? req.query.capacity : 2000, familyProfile));
+});
+
+router.post('/synthetic/post', function(req, res, next) {
+
 });
 
 router.post('/usage', function(req, res, next) {
