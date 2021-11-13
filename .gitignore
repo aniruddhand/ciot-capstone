@@ -3,3 +3,4 @@
 app/.env
 app/.env.dev
 app/.env.prod.debug
+app/certs

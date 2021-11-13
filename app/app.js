@@ -23,6 +23,7 @@ var alertsRouter = require('./routes/alerts');
 // var apartmentRouter = require('./routes/apartment');
 var registrationsRouter = require('./routes/registrations');
 var timeseriesRouter = require('./routes/timeseries');
+var fleetControlRouter = require('./routes/fleetcontrol');
 
 var sessionValidator = require('./lib/session_validator');
 var sessionTTLSetter = require('./lib/session_ttl_setter');
@@ -48,6 +49,7 @@ app.use('/api/register', registrationsRouter);
 app.use('/api/session', sessionRouter);
 app.use('/api/status', statusRouter);
 app.use('/api/timeseries', timeseriesRouter);
+app.use('/api/fleet', fleetControlRouter);
 
 app.use((err, req, res, next) => {
     console.log(err.toString());
